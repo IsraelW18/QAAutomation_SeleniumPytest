@@ -202,3 +202,72 @@ assert 6 == 7
 2024-11-19 13:55:32,844 - conftest - INFO - Scenario 6 begin
 2024-11-19 13:56:20,454 - conftest - INFO - Scenario 6 begin
 2024-11-19 13:56:22,895 - conftest - INFO - Scenario 6 = passed
+2024-11-21 11:16:07,626 - conftest - DEBUG - logger setup successfully
+2024-11-21 11:16:07,627 - conftest - DEBUG - driver setup successfully
+2024-11-21 11:16:10,616 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 11:18:03,197 - conftest - DEBUG - logger setup successfully
+2024-11-21 11:18:03,198 - conftest - DEBUG - driver setup successfully
+2024-11-21 11:18:05,719 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 11:19:46,989 - conftest - DEBUG - logger setup successfully
+2024-11-21 11:19:46,990 - conftest - DEBUG - driver setup successfully
+2024-11-21 11:19:48,142 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 11:39:56,660 - conftest - DEBUG - logger setup successfully
+2024-11-21 11:39:56,661 - conftest - DEBUG - driver setup successfully
+2024-11-21 11:39:58,845 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 11:39:59,579 - conftest - INFO - redirected to 'register page'
+2024-11-21 11:41:44,491 - conftest - DEBUG - logger setup successfully
+2024-11-21 11:41:44,492 - conftest - DEBUG - driver setup successfully
+2024-11-21 11:41:46,302 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 11:41:47,128 - conftest - INFO - redirected to 'register page'
+2024-11-21 11:42:38,241 - conftest - DEBUG - logger setup successfully
+2024-11-21 11:42:38,241 - conftest - DEBUG - driver setup successfully
+2024-11-21 11:42:39,716 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 11:42:41,422 - conftest - INFO - redirected to 'register page'
+2024-11-21 11:43:06,821 - conftest - DEBUG - logger setup successfully
+2024-11-21 11:43:06,821 - conftest - DEBUG - driver setup successfully
+2024-11-21 11:43:07,170 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 11:43:08,886 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:06:16,765 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:06:16,766 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:06:18,265 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:06:18,915 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:16:41,943 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:16:41,944 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:16:44,547 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:16:45,703 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:19:30,610 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:19:30,610 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:19:32,110 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:19:32,831 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:19:53,055 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:19:53,056 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:19:55,539 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:19:56,226 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:26:25,398 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:26:25,399 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:26:28,120 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:26:28,811 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:34:26,030 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:34:26,031 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:34:28,675 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:34:29,789 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:38:18,795 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:38:18,796 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:38:21,344 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:38:22,006 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:42:55,222 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:42:55,222 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:42:57,863 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:42:58,520 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:43:35,294 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:43:35,295 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:43:36,734 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:43:37,469 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:46:32,066 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:46:32,066 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:46:34,665 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:46:35,415 - conftest - INFO - redirected to 'register page'
+2024-11-21 15:47:49,045 - conftest - DEBUG - logger setup successfully
+2024-11-21 15:47:49,045 - conftest - DEBUG - driver setup successfully
+2024-11-21 15:47:50,632 - conftest - INFO - navigate to 'https://carsphere.onrender.com/' success
+2024-11-21 15:47:51,321 - conftest - INFO - redirected to 'register page'
