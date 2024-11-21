@@ -1,0 +1,204 @@
+2024-11-07 17:53:48,782 - conftest - INFO - logger setup successfully
+2024-11-07 17:53:48,782 - conftest - INFO - web driver setup successfully
+2024-11-07 17:53:51,398 - conftest - INFO - GET http request fo the main page
+2024-11-07 17:53:51,432 - conftest - INFO - maximizing window
+2024-11-07 17:55:18,126 - conftest - INFO - logger setup successfully
+2024-11-07 17:55:18,126 - conftest - INFO - web driver setup successfully
+2024-11-07 17:55:20,795 - conftest - INFO - GET http request fo the main page
+2024-11-07 17:55:20,851 - conftest - INFO - maximizing window
+2024-11-07 17:55:20,906 - conftest - INFO - scenario_1 finished
+2024-11-07 18:18:21,824 - conftest - INFO - logger setup successfully
+2024-11-07 18:18:21,824 - conftest - INFO - web driver setup successfully
+2024-11-07 18:19:05,890 - conftest - INFO - GET http request for the main page
+2024-11-07 18:19:05,921 - conftest - INFO - maximizing window
+2024-11-07 18:19:05,952 - conftest - INFO - Scenario_1 = passed
+2024-11-07 18:19:53,705 - conftest - ERROR - logger setup successfully
+2024-11-07 18:19:53,705 - conftest - INFO - web driver setup successfully
+2024-11-07 18:19:55,582 - conftest - INFO - GET http request for the main page
+2024-11-07 18:19:55,614 - conftest - INFO - maximizing window
+2024-11-07 18:19:55,648 - conftest - INFO - Scenario_1 = passed
+2024-11-07 18:20:36,126 - conftest - INFO - logger setup successfully
+2024-11-07 18:20:36,127 - conftest - INFO - web driver setup successfully
+2024-11-07 18:20:37,587 - conftest - INFO - GET http request for the main page
+2024-11-07 18:20:37,628 - conftest - INFO - maximizing window
+2024-11-07 18:20:37,656 - conftest - ERROR - wrong background img, got url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg"), expected url("https://carsphere.onrender.com/static/background_image/background_showroom.jp")
+assert 'url("https:/...howroom.jpg")' == 'url("https:/...showroom.jp")'
+  
+  - url("https://carsphere.onrender.com/static/background_image/background_showroom.jp")
+  + url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg")
+  ?                                                                                   +
+2024-11-07 18:22:24,090 - conftest - INFO - logger setup successfully
+2024-11-07 18:22:24,090 - conftest - INFO - web driver setup successfully
+2024-11-07 18:22:26,593 - conftest - INFO - GET http request for the main page
+2024-11-07 18:22:26,662 - conftest - INFO - maximizing window
+2024-11-07 18:24:01,865 - conftest - INFO - logger setup successfully
+2024-11-07 18:24:01,865 - conftest - INFO - web driver setup successfully
+2024-11-07 18:24:03,386 - conftest - INFO - GET http request for the main page
+2024-11-07 18:24:03,410 - conftest - INFO - maximizing window
+2024-11-07 18:24:03,464 - conftest - ERROR - wrong background img, got url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg"), expected url("https://carsphere.onrender.com/static/background_image/background_showroom.jp")
+assert 'url("https:/...howroom.jpg")' == 'url("https:/...showroom.jp")'
+  
+  - url("https://carsphere.onrender.com/static/background_image/background_showroom.jp")
+  + url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg")
+  ?                                                                                   +
+2024-11-07 18:26:12,309 - conftest - INFO - logger setup successfully
+2024-11-07 18:26:12,309 - conftest - INFO - web driver setup successfully
+2024-11-07 18:26:18,891 - conftest - INFO - GET http request for the main page
+2024-11-07 18:26:18,951 - conftest - INFO - maximizing window
+2024-11-07 18:26:18,976 - conftest - ERROR - wrong background img, got url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg"), expected url("https://carsphere.onrender.com/static/background_image/background_showroom.jp")
+assert 'url("https:/...howroom.jpg")' == 'url("https:/...showroom.jp")'
+  
+  - url("https://carsphere.onrender.com/static/background_image/background_showroom.jp")
+  + url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg")
+  ?                                                                                   +
+2024-11-07 18:28:41,369 - conftest - INFO - logger setup successfully
+2024-11-07 18:28:41,369 - conftest - INFO - web driver setup successfully
+2024-11-07 18:28:43,356 - conftest - INFO - GET http request for the main page
+2024-11-07 18:28:43,383 - conftest - INFO - maximizing window
+2024-11-07 18:28:43,426 - conftest - ERROR - wrong background img, got url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg"), expected url("https://carsphere.onrender.com/static/background_image/background_showroom.jp")
+assert 'url("https:/...howroom.jpg")' == 'url("https:/...showroom.jp")'
+  
+  - url("https://carsphere.onrender.com/static/background_image/background_showroom.jp")
+  + url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg")
+  ?                                                                                   +
+2024-11-10 12:44:41,635 - conftest - INFO - logger setup successfully
+2024-11-10 12:44:41,637 - conftest - INFO - web driver setup successfully
+2024-11-10 12:44:44,395 - conftest - INFO - GET http request for the main page
+2024-11-10 12:44:44,450 - conftest - INFO - maximizing window
+2024-11-10 12:44:44,513 - conftest - INFO - Scenario_1 = passed
+2024-11-10 12:59:02,480 - conftest - INFO - logger setup successfully
+2024-11-10 12:59:02,481 - conftest - INFO - web driver setup successfully
+2024-11-10 12:59:05,543 - conftest - INFO - GET http request for the main page
+2024-11-10 12:59:05,577 - conftest - INFO - maximizing window
+2024-11-10 12:59:05,612 - conftest - INFO - Scenario_1 = passed
+2024-11-10 13:21:16,070 - conftest - INFO - logger setup successfully
+2024-11-10 13:21:16,070 - conftest - INFO - web driver setup successfully
+2024-11-10 13:21:18,272 - conftest - INFO - GET http request for the main page
+2024-11-10 13:21:18,343 - conftest - INFO - maximizing window
+2024-11-10 13:21:18,384 - conftest - INFO - Scenario_1 = passed
+2024-11-10 13:21:24,500 - conftest - INFO - logger setup successfully
+2024-11-10 13:21:24,500 - conftest - INFO - logger setup successfully
+2024-11-10 13:21:24,500 - conftest - INFO - web driver setup successfully
+2024-11-10 13:21:24,500 - conftest - INFO - web driver setup successfully
+2024-11-10 13:21:26,983 - conftest - INFO - GET http request for the main page
+2024-11-10 13:21:26,983 - conftest - INFO - GET http request for the main page
+2024-11-10 13:21:27,083 - conftest - INFO - maximizing window
+2024-11-10 13:21:27,083 - conftest - INFO - maximizing window
+2024-11-10 13:25:54,460 - conftest - INFO - logger setup successfully
+2024-11-10 13:25:54,460 - conftest - INFO - web driver setup successfully
+2024-11-10 13:25:56,865 - conftest - INFO - GET http request for the main page
+2024-11-10 13:25:56,896 - conftest - INFO - maximizing window
+2024-11-10 13:26:34,615 - conftest - INFO - logger setup successfully
+2024-11-10 13:26:34,615 - conftest - INFO - web driver setup successfully
+2024-11-10 13:26:36,861 - conftest - INFO - GET http request for the main page
+2024-11-10 13:26:36,892 - conftest - INFO - maximizing window
+2024-11-10 13:26:36,936 - conftest - INFO - Scenario_1 = passed
+2024-11-10 13:26:42,886 - conftest - INFO - logger setup successfully
+2024-11-10 13:26:42,886 - conftest - INFO - logger setup successfully
+2024-11-10 13:26:42,886 - conftest - INFO - web driver setup successfully
+2024-11-10 13:26:42,886 - conftest - INFO - web driver setup successfully
+2024-11-10 13:26:45,507 - conftest - INFO - GET http request for the main page
+2024-11-10 13:26:45,507 - conftest - INFO - GET http request for the main page
+2024-11-10 13:26:45,566 - conftest - INFO - maximizing window
+2024-11-10 13:26:45,566 - conftest - INFO - maximizing window
+2024-11-10 13:32:48,647 - conftest - INFO - logger setup successfully
+2024-11-10 13:32:48,648 - conftest - INFO - web driver setup successfully
+2024-11-10 13:32:51,370 - conftest - INFO - GET http request for the main page
+2024-11-10 13:32:51,405 - conftest - INFO - maximizing window
+2024-11-10 13:32:51,435 - conftest - INFO - Scenario_2 = passed
+2024-11-10 13:34:11,555 - conftest - INFO - logger setup successfully
+2024-11-10 13:34:11,556 - conftest - INFO - web driver setup successfully
+2024-11-10 13:34:13,396 - conftest - INFO - GET http request for the main page
+2024-11-10 13:34:13,437 - conftest - INFO - maximizing window
+2024-11-10 13:34:13,477 - conftest - INFO - Scenario_1 = passed
+2024-11-10 13:34:19,417 - conftest - INFO - logger setup successfully
+2024-11-10 13:34:19,417 - conftest - INFO - logger setup successfully
+2024-11-10 13:34:19,417 - conftest - INFO - web driver setup successfully
+2024-11-10 13:34:19,417 - conftest - INFO - web driver setup successfully
+2024-11-10 13:34:20,664 - conftest - INFO - GET http request for the main page
+2024-11-10 13:34:20,664 - conftest - INFO - GET http request for the main page
+2024-11-10 13:34:20,704 - conftest - INFO - maximizing window
+2024-11-10 13:34:20,704 - conftest - INFO - maximizing window
+2024-11-10 13:34:20,740 - conftest - INFO - Scenario_2 = passed
+2024-11-10 13:34:20,740 - conftest - INFO - Scenario_2 = passed
+2024-11-10 13:35:11,656 - conftest - INFO - logger setup successfully
+2024-11-10 13:35:11,657 - conftest - INFO - web driver setup successfully
+2024-11-10 13:35:14,234 - conftest - INFO - GET http request for the main page
+2024-11-10 13:35:14,291 - conftest - INFO - maximizing window
+2024-11-10 13:35:14,350 - conftest - INFO - Scenario_1 = passed
+2024-11-10 13:35:20,504 - conftest - INFO - logger setup successfully
+2024-11-10 13:35:20,504 - conftest - INFO - logger setup successfully
+2024-11-10 13:35:20,504 - conftest - INFO - web driver setup successfully
+2024-11-10 13:35:20,504 - conftest - INFO - web driver setup successfully
+2024-11-10 13:35:21,885 - conftest - INFO - GET http request for the main page
+2024-11-10 13:35:21,885 - conftest - INFO - GET http request for the main page
+2024-11-10 13:35:21,947 - conftest - INFO - maximizing window
+2024-11-10 13:35:21,947 - conftest - INFO - maximizing window
+2024-11-10 13:35:21,965 - conftest - INFO - Scenario_2 = passed
+2024-11-10 13:35:21,965 - conftest - INFO - Scenario_2 = passed
+2024-11-10 13:43:33,822 - conftest - INFO - logger setup successfully
+2024-11-10 13:43:33,823 - conftest - INFO - web driver setup successfully
+2024-11-10 13:43:36,564 - conftest - INFO - GET http request for the main page
+2024-11-10 13:43:36,608 - conftest - INFO - maximizing window
+2024-11-10 13:43:36,626 - conftest - ERROR - Catalog shall include 6 items, got 6
+assert 6 == 7
+ +  where 6 = len([<selenium.webdriver.remote.webelement.WebElement (session="e75de5e1b8f855befc21c5b2faa361be", element="f.FAD3E80F886881B1B349770473F3CC19.d.2E591096AFBECC6550F6A8755F2C084A.e.21")>, <selenium.webdriver.remote.webelement.WebElement (session="e75de5e1b8f855befc21c5b2faa361be", element="f.FAD3E80F886881B1B349770473F3CC19.d.2E591096AFBECC6550F6A8755F2C084A.e.16")>, <selenium.webdriver.remote.webelement.WebElement (session="e75de5e1b8f855befc21c5b2faa361be", element="f.FAD3E80F886881B1B349770473F3CC19.d.2E591096AFBECC6550F6A8755F2C084A.e.17")>, <selenium.webdriver.remote.webelement.WebElement (session="e75de5e1b8f855befc21c5b2faa361be", element="f.FAD3E80F886881B1B349770473F3CC19.d.2E591096AFBECC6550F6A8755F2C084A.e.18")>, <selenium.webdriver.remote.webelement.WebElement (session="e75de5e1b8f855befc21c5b2faa361be", element="f.FAD3E80F886881B1B349770473F3CC19.d.2E591096AFBECC6550F6A8755F2C084A.e.19")>, <selenium.webdriver.remote.webelement.WebElement (session="e75de5e1b8f855befc21c5b2faa361be", element="f.FAD3E80F886881B1B349770473F3CC19.d.2E591096AFBECC6550F6A8755F2C084A.e.20")>])
+2024-11-10 14:43:31,883 - conftest - INFO - logger setup successfully
+2024-11-10 14:43:31,885 - conftest - INFO - web driver setup successfully
+2024-11-10 14:43:33,130 - conftest - INFO - GET http request for the main page
+2024-11-10 14:59:53,966 - conftest - ERROR - image https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg is incorrect, expected https://carsphere.onrender.com/static/images/3_Porsche.jpg
+2024-11-10 15:02:44,107 - conftest - ERROR - image https://carsphere.onrender.com/static/images/3_Porsche.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:02:44,116 - conftest - ERROR - image https://carsphere.onrender.com/static/images/6_Mercedes_BenzSClass.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:02:44,129 - conftest - ERROR - image https://carsphere.onrender.com/static/images/9_Jeep_Wrangler.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:02:44,136 - conftest - ERROR - image https://carsphere.onrender.com/static/images/8_Ford_Transit.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:02:44,144 - conftest - ERROR - image https://carsphere.onrender.com/static/images/7_BMW_7Series.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:03:49,229 - conftest - ERROR - image https://carsphere.onrender.com/static/images/3_Porsche.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:04:17,441 - conftest - ERROR - image https://carsphere.onrender.com/static/images/6_Mercedes_BenzSClass.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:04:20,779 - conftest - ERROR - image https://carsphere.onrender.com/static/images/9_Jeep_Wrangler.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:04:23,129 - conftest - ERROR - image https://carsphere.onrender.com/static/images/8_Ford_Transit.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:04:25,765 - conftest - ERROR - image https://carsphere.onrender.com/static/images/7_BMW_7Series.jpg is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg
+2024-11-10 15:18:03,703 - conftest - ERROR - got https://carsphere.onrender.com/static/images/8_Ford_Transit.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/8_Ford_Transit.jp
+2024-11-10 15:19:17,121 - conftest - ERROR - got https://carsphere.onrender.com/static/images/8_Ford_Transit.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/8_Ford_Transit.jp
+2024-11-10 15:20:40,092 - conftest - ERROR - got https://carsphere.onrender.com/static/images/8_Ford_Transit.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/8_Ford_Transit.jp
+2024-11-10 15:21:38,394 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 15:23:20,469 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 15:23:59,545 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 15:46:37,544 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 15:47:03,695 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 18:39:23,189 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 18:59:32,903 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 19:16:56,531 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 19:17:57,769 - conftest - INFO - logger setup successfully
+2024-11-10 19:17:57,769 - conftest - INFO - web driver setup successfully
+2024-11-10 19:18:00,220 - conftest - INFO - GET http request for the main page
+2024-11-10 19:18:00,248 - conftest - INFO - maximizing window
+2024-11-10 19:18:00,272 - conftest - INFO - Scenario_1 = passed
+2024-11-10 19:18:06,244 - conftest - INFO - logger setup successfully
+2024-11-10 19:18:06,244 - conftest - INFO - logger setup successfully
+2024-11-10 19:18:06,244 - conftest - INFO - web driver setup successfully
+2024-11-10 19:18:06,244 - conftest - INFO - web driver setup successfully
+2024-11-10 19:18:11,150 - conftest - INFO - GET http request for the main page
+2024-11-10 19:18:11,150 - conftest - INFO - GET http request for the main page
+2024-11-10 19:18:11,161 - conftest - INFO - Scenario_2 = passed
+2024-11-10 19:18:11,161 - conftest - INFO - Scenario_2 = passed
+2024-11-10 19:18:19,004 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 19:18:19,004 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-10 19:18:19,004 - conftest - ERROR - got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp
+2024-11-19 12:09:18,867 - conftest - INFO - Scenario 4 begin
+2024-11-19 12:09:21,551 - conftest - ERROR - Expected https://carsphere.onrender.com/static/background_image/branding.png, got <selenium.webdriver.remote.webelement.WebElement (session="a0d3bb2a66a9dfce379daf404f1e3933", element="f.99AD58C0E95512A4824D8622E0676E87.d.421F13BEE8DC64D9ED556FDB5F445438.e.8")>
+2024-11-19 12:11:40,907 - conftest - INFO - Scenario 4 begin
+2024-11-19 12:12:59,135 - conftest - INFO - Scenario 4 begin
+2024-11-19 12:13:42,139 - conftest - INFO - Scenario 4 begin
+2024-11-19 13:04:17,768 - conftest - ERROR - Expected https://www.linkedin.com/authwall?trk=gf&trkInfo=AQElOEmqrfBR_wAAAZNEEDhwWDeba00EZ_0LMYesmO6lQgCo-jgDk190Y3CKPzq7JbbbCP5r2FcrzGm4XC47jIfyLiLH_FU4KKhG3RBphZ-PXUC9J19n89eyvyGDZwBKnuheLSA=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fisrael-wasserman%2F, got https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGGGXIcPuUmZQAAAZNEGDdQoPUNTFB85yW6PXIrk_wBIv-bRQMnAPl5ikk6yM7rkpijIxj2-BK2RB4Yx0mzfwE3iKYHEnYT3H1kW0DjxXV6p4BDHCSydEfVNoFnvEi5FpYJnC4=&original_referer=https://carsphere.onrender.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fisrael-wasserman%2F
+2024-11-19 13:07:40,879 - conftest - ERROR - Expected https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHQjXdPZ_HMnAAAAZNEGrvYOC7-07_WGz70nQ_tzjTCDWpgOOi7x6SnI6dZNVRaOqhvVGBU1HizwR6yXlTgIgtRM5b2b_JCm4H6X6SENVabC7NIblTMYPe7-b0fg-UQHsieILM=&original_referer=https://carsphere.onrender.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fisrael-wasserman%2F, got https://www.linkedin.com/in/israel-wasserman/
+2024-11-19 13:08:25,840 - conftest - ERROR - Expected https://www.linkedin.com/in/israel-wasserman/, got https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFvIeu4PIBoRAAAAZNEHAP4vh1QRL7b6MApocCWS6zwuiv0JzufDi1cFEEFZIIIiAyTdPW8I5jw2U5pghRPNc14TSaihLRYrUz2slN1l_f9E0dEBa3l1OxNNxyolMkSgAEsWOc=&original_referer=https://carsphere.onrender.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fisrael-wasserman%2F
+2024-11-19 13:09:00,552 - conftest - ERROR - Expected https://www.linkedin.com/in/israel-wasserman/, got https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGmbm6Gx7TU4wAAAZNEHIjIgcrS2JS7f9mSNQ0GeE-MkDdCd63vzc609SXDacGUdDqfMKaXmB0AE4otzCyYYWxGJ6yE_pEGh3uzmu_xJRIMAy2x6G5H18zvZ2LqA7znRUKUr-c=&original_referer=https://carsphere.onrender.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fisrael-wasserman%2F
+2024-11-19 13:12:05,795 - conftest - ERROR - Expected https://www.linkedin.com/in/israel-wasserman/, got https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEWpSMwckN4nAAAAZNEH19Yg2DEE3hqGS2X87Df5tcuyrmPUm6M2rb3bBGXt3tYUAwQgK4SARixCIrMz7ZjGIBE3ceJ4AoK1RnkejqTKe8oHoCbmBda7K0RQJ8nBehbxkGPKIY=&original_referer=https://carsphere.onrender.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fisrael-wasserman%2F
+2024-11-19 13:13:51,145 - conftest - ERROR - Expected https://www.linkedin.com/in/israel-wasserman/, got https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFJ4BA8CmdF9gAAAZNEIPmA2ZoqcvDLG152EXKJZSWAwf0qE3P3DxwnHr2eXLtzBf845rwC1d0BSdrrmZRWgDSbxKXo3IDI6VhCNNq4nWEZOMMgzvtzhiXWs1cnt6mYG9smk0U=&original_referer=https://carsphere.onrender.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fisrael-wasserman%2F
+2024-11-19 13:14:47,616 - conftest - ERROR - Expected https://www.linkedin.com/in/israel-wasserman/, got https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH9M1HbeSXwdwAAAZNEIdRA53-eCTD6k8kwzeocRZokTesx0LrXKp2ghFcST6ixb4V4CsH1aAdlYuU6vSgz5aIQPOaMnZFIdLNvLqO7Jd6-A7_Frl-VGdC8S0BgEZJmpq_TaGQ=&original_referer=https://carsphere.onrender.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fisrael-wasserman%2F
+2024-11-19 13:17:14,279 - conftest - INFO - Scenario 5 = passed
+2024-11-19 13:55:09,958 - conftest - INFO - Scenario 6 begin
+2024-11-19 13:55:14,300 - conftest - INFO - Scenario 6 = passed
+2024-11-19 13:55:32,844 - conftest - INFO - Scenario 6 begin
+2024-11-19 13:56:20,454 - conftest - INFO - Scenario 6 begin
+2024-11-19 13:56:22,895 - conftest - INFO - Scenario 6 = passed
