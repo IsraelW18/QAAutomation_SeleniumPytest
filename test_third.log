@@ -4002,3 +4002,1478 @@ Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Wea
 2024-11-26 17:07:29,269 - conftest - INFO - Scenario_15 Passed
 2024-11-26 17:07:29,269 - conftest - INFO - Scenario_15 Passed
 2024-11-26 17:07:29,269 - conftest - INFO - Scenario_15 Passed
+2024-11-26 17:25:21,274 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:25:21,275 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:25:23,959 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:25:26,672 - conftest - INFO - Validate that 'Add New Car' option/button displayed for 'admin' user
+2024-11-26 17:25:26,800 - conftest - INFO - Scenario_10 Passed
+2024-11-26 17:25:35,923 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:25:35,923 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:25:35,923 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:25:35,923 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:25:37,269 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:25:37,269 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:25:39,499 - conftest - INFO - Validate that 'Delete' item option displayed for 'admin' user
+2024-11-26 17:25:39,499 - conftest - INFO - Validate that 'Delete' item option displayed for 'admin' user
+2024-11-26 17:25:39,525 - conftest - INFO - Deleted button exist for Car item No.'0'
+2024-11-26 17:25:39,525 - conftest - INFO - Deleted button exist for Car item No.'0'
+2024-11-26 17:25:39,532 - conftest - INFO - Deleted button exist for Car item No.'1'
+2024-11-26 17:25:39,532 - conftest - INFO - Deleted button exist for Car item No.'1'
+2024-11-26 17:25:39,539 - conftest - INFO - Deleted button exist for Car item No.'2'
+2024-11-26 17:25:39,539 - conftest - INFO - Deleted button exist for Car item No.'2'
+2024-11-26 17:25:39,544 - conftest - INFO - Deleted button exist for Car item No.'3'
+2024-11-26 17:25:39,544 - conftest - INFO - Deleted button exist for Car item No.'3'
+2024-11-26 17:25:39,551 - conftest - INFO - Deleted button exist for Car item No.'4'
+2024-11-26 17:25:39,551 - conftest - INFO - Deleted button exist for Car item No.'4'
+2024-11-26 17:25:39,557 - conftest - INFO - Deleted button exist for Car item No.'5'
+2024-11-26 17:25:39,557 - conftest - INFO - Deleted button exist for Car item No.'5'
+2024-11-26 17:25:39,562 - conftest - INFO - Deleted button exist for Car item No.'6'
+2024-11-26 17:25:39,562 - conftest - INFO - Deleted button exist for Car item No.'6'
+2024-11-26 17:25:39,569 - conftest - INFO - Deleted button exist for Car item No.'7'
+2024-11-26 17:25:39,569 - conftest - INFO - Deleted button exist for Car item No.'7'
+2024-11-26 17:25:39,574 - conftest - INFO - Deleted button exist for Car item No.'8'
+2024-11-26 17:25:39,574 - conftest - INFO - Deleted button exist for Car item No.'8'
+2024-11-26 17:25:39,574 - conftest - INFO - Scenario_11 Passed
+2024-11-26 17:25:39,574 - conftest - INFO - Scenario_11 Passed
+2024-11-26 17:25:48,332 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:25:48,332 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:25:48,332 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:25:48,332 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:25:48,332 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:25:48,332 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:25:50,402 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:25:50,402 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:25:50,402 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:25:53,057 - conftest - INFO - Validate that 'Add New Car' option/button is hidden for 'non admin' user
+2024-11-26 17:25:53,057 - conftest - INFO - Validate that 'Add New Car' option/button is hidden for 'non admin' user
+2024-11-26 17:25:53,057 - conftest - INFO - Validate that 'Add New Car' option/button is hidden for 'non admin' user
+2024-11-26 17:25:53,057 - conftest - INFO - Scenario_12 Passed
+2024-11-26 17:25:53,057 - conftest - INFO - Scenario_12 Passed
+2024-11-26 17:25:53,057 - conftest - INFO - Scenario_12 Passed
+2024-11-26 17:26:01,623 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:01,623 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:01,623 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:01,623 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:01,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:01,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:01,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:01,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:03,104 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:03,104 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:03,104 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:03,104 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:05,034 - conftest - INFO - Validate that 'Delete' option/button is hidden for 'non admin' user
+2024-11-26 17:26:05,034 - conftest - INFO - Validate that 'Delete' option/button is hidden for 'non admin' user
+2024-11-26 17:26:05,034 - conftest - INFO - Validate that 'Delete' option/button is hidden for 'non admin' user
+2024-11-26 17:26:05,034 - conftest - INFO - Validate that 'Delete' option/button is hidden for 'non admin' user
+2024-11-26 17:26:05,034 - conftest - INFO - scenario_13 Passed
+2024-11-26 17:26:05,034 - conftest - INFO - scenario_13 Passed
+2024-11-26 17:26:05,034 - conftest - INFO - scenario_13 Passed
+2024-11-26 17:26:05,034 - conftest - INFO - scenario_13 Passed
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:13,711 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:15,751 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:15,751 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:15,751 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:15,751 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:15,751 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:21,691 - conftest - INFO - Validate that new car is added to CarSphere catalog when logged-in with 'admin user
+2024-11-26 17:26:21,691 - conftest - INFO - Validate that new car is added to CarSphere catalog when logged-in with 'admin user
+2024-11-26 17:26:21,691 - conftest - INFO - Validate that new car is added to CarSphere catalog when logged-in with 'admin user
+2024-11-26 17:26:21,691 - conftest - INFO - Validate that new car is added to CarSphere catalog when logged-in with 'admin user
+2024-11-26 17:26:21,691 - conftest - INFO - Validate that new car is added to CarSphere catalog when logged-in with 'admin user
+2024-11-26 17:26:21,691 - conftest - INFO - New Car successfully added to CarSphere Catalog
+2024-11-26 17:26:21,691 - conftest - INFO - New Car successfully added to CarSphere Catalog
+2024-11-26 17:26:21,691 - conftest - INFO - New Car successfully added to CarSphere Catalog
+2024-11-26 17:26:21,691 - conftest - INFO - New Car successfully added to CarSphere Catalog
+2024-11-26 17:26:21,691 - conftest - INFO - New Car successfully added to CarSphere Catalog
+2024-11-26 17:26:21,693 - conftest - INFO - Scenario_14 Passed
+2024-11-26 17:26:21,693 - conftest - INFO - Scenario_14 Passed
+2024-11-26 17:26:21,693 - conftest - INFO - Scenario_14 Passed
+2024-11-26 17:26:21,693 - conftest - INFO - Scenario_14 Passed
+2024-11-26 17:26:21,693 - conftest - INFO - Scenario_14 Passed
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:30,680 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:34,062 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:34,062 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:34,062 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:34,062 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:34,062 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:34,062 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:37,369 - conftest - INFO - Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user
+2024-11-26 17:26:37,369 - conftest - INFO - Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user
+2024-11-26 17:26:37,369 - conftest - INFO - Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user
+2024-11-26 17:26:37,369 - conftest - INFO - Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user
+2024-11-26 17:26:37,369 - conftest - INFO - Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user
+2024-11-26 17:26:37,369 - conftest - INFO - Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user
+2024-11-26 17:26:37,384 - conftest - INFO - Car successfully deleted from CarSphere catalog
+2024-11-26 17:26:37,384 - conftest - INFO - Car successfully deleted from CarSphere catalog
+2024-11-26 17:26:37,384 - conftest - INFO - Car successfully deleted from CarSphere catalog
+2024-11-26 17:26:37,384 - conftest - INFO - Car successfully deleted from CarSphere catalog
+2024-11-26 17:26:37,384 - conftest - INFO - Car successfully deleted from CarSphere catalog
+2024-11-26 17:26:37,384 - conftest - INFO - Car successfully deleted from CarSphere catalog
+2024-11-26 17:26:37,384 - conftest - INFO - Scenario_15 Passed
+2024-11-26 17:26:37,384 - conftest - INFO - Scenario_15 Passed
+2024-11-26 17:26:37,384 - conftest - INFO - Scenario_15 Passed
+2024-11-26 17:26:37,384 - conftest - INFO - Scenario_15 Passed
+2024-11-26 17:26:37,384 - conftest - INFO - Scenario_15 Passed
+2024-11-26 17:26:37,384 - conftest - INFO - Scenario_15 Passed
+2024-11-26 17:26:46,122 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:46,122 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:46,122 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:46,122 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:46,122 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:46,122 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:46,122 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:46,123 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:46,123 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:46,123 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:46,123 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:46,123 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:46,123 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:46,123 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:47,309 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:47,309 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:47,309 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:47,309 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:47,309 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:47,309 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:47,309 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:26:47,974 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:26:47,974 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:26:47,974 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:26:47,974 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:26:47,974 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:26:47,974 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:26:47,974 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:26:48,615 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:26:48,615 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:26:48,615 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:26:48,615 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:26:48,615 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:26:48,615 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:26:48,615 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:26:48,616 - conftest - INFO - new random username created: username: Auto_username607, password: 1234
+2024-11-26 17:26:48,616 - conftest - INFO - new random username created: username: Auto_username607, password: 1234
+2024-11-26 17:26:48,616 - conftest - INFO - new random username created: username: Auto_username607, password: 1234
+2024-11-26 17:26:48,616 - conftest - INFO - new random username created: username: Auto_username607, password: 1234
+2024-11-26 17:26:48,616 - conftest - INFO - new random username created: username: Auto_username607, password: 1234
+2024-11-26 17:26:48,616 - conftest - INFO - new random username created: username: Auto_username607, password: 1234
+2024-11-26 17:26:48,616 - conftest - INFO - new random username created: username: Auto_username607, password: 1234
+2024-11-26 17:26:50,210 - conftest - INFO - Validate that new user successfully signed-up
+2024-11-26 17:26:50,210 - conftest - INFO - Validate that new user successfully signed-up
+2024-11-26 17:26:50,210 - conftest - INFO - Validate that new user successfully signed-up
+2024-11-26 17:26:50,210 - conftest - INFO - Validate that new user successfully signed-up
+2024-11-26 17:26:50,210 - conftest - INFO - Validate that new user successfully signed-up
+2024-11-26 17:26:50,210 - conftest - INFO - Validate that new user successfully signed-up
+2024-11-26 17:26:50,210 - conftest - INFO - Validate that new user successfully signed-up
+2024-11-26 17:26:50,211 - conftest - INFO - Scenario_1 Passed
+2024-11-26 17:26:50,211 - conftest - INFO - Scenario_1 Passed
+2024-11-26 17:26:50,211 - conftest - INFO - Scenario_1 Passed
+2024-11-26 17:26:50,211 - conftest - INFO - Scenario_1 Passed
+2024-11-26 17:26:50,211 - conftest - INFO - Scenario_1 Passed
+2024-11-26 17:26:50,211 - conftest - INFO - Scenario_1 Passed
+2024-11-26 17:26:50,211 - conftest - INFO - Scenario_1 Passed
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:26:59,031 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:01,091 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:01,091 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:01,091 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:01,091 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:01,091 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:01,091 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:01,091 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:01,091 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:01,760 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:27:01,760 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:27:01,760 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:27:01,760 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:27:01,760 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:27:01,760 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:27:01,760 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:27:01,760 - conftest - INFO - redirect to 'register page'
+2024-11-26 17:27:02,375 - conftest - INFO - <class 'list'>
+2024-11-26 17:27:02,375 - conftest - INFO - <class 'list'>
+2024-11-26 17:27:02,375 - conftest - INFO - <class 'list'>
+2024-11-26 17:27:02,375 - conftest - INFO - <class 'list'>
+2024-11-26 17:27:02,375 - conftest - INFO - <class 'list'>
+2024-11-26 17:27:02,375 - conftest - INFO - <class 'list'>
+2024-11-26 17:27:02,375 - conftest - INFO - <class 'list'>
+2024-11-26 17:27:02,375 - conftest - INFO - <class 'list'>
+2024-11-26 17:27:02,375 - conftest - INFO - 12
+2024-11-26 17:27:02,375 - conftest - INFO - 12
+2024-11-26 17:27:02,375 - conftest - INFO - 12
+2024-11-26 17:27:02,375 - conftest - INFO - 12
+2024-11-26 17:27:02,375 - conftest - INFO - 12
+2024-11-26 17:27:02,375 - conftest - INFO - 12
+2024-11-26 17:27:02,375 - conftest - INFO - 12
+2024-11-26 17:27:02,375 - conftest - INFO - 12
+2024-11-26 17:27:03,256 - conftest - INFO - Validate that signing-up of an existing user successfully rejected
+2024-11-26 17:27:03,256 - conftest - INFO - Validate that signing-up of an existing user successfully rejected
+2024-11-26 17:27:03,256 - conftest - INFO - Validate that signing-up of an existing user successfully rejected
+2024-11-26 17:27:03,256 - conftest - INFO - Validate that signing-up of an existing user successfully rejected
+2024-11-26 17:27:03,256 - conftest - INFO - Validate that signing-up of an existing user successfully rejected
+2024-11-26 17:27:03,256 - conftest - INFO - Validate that signing-up of an existing user successfully rejected
+2024-11-26 17:27:03,256 - conftest - INFO - Validate that signing-up of an existing user successfully rejected
+2024-11-26 17:27:03,256 - conftest - INFO - Validate that signing-up of an existing user successfully rejected
+2024-11-26 17:27:03,256 - conftest - INFO - Scenario_2 Passed
+2024-11-26 17:27:03,256 - conftest - INFO - Scenario_2 Passed
+2024-11-26 17:27:03,256 - conftest - INFO - Scenario_2 Passed
+2024-11-26 17:27:03,256 - conftest - INFO - Scenario_2 Passed
+2024-11-26 17:27:03,256 - conftest - INFO - Scenario_2 Passed
+2024-11-26 17:27:03,256 - conftest - INFO - Scenario_2 Passed
+2024-11-26 17:27:03,256 - conftest - INFO - Scenario_2 Passed
+2024-11-26 17:27:03,256 - conftest - INFO - Scenario_2 Passed
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:12,062 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:13,754 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,003 - conftest - DEBUG - getting all existing users from DB:
+["12","222","Auto_username004","Auto_username043","Auto_username045","Auto_username110","Auto_username270","Auto_username400","Auto_username438","Auto_username505","Auto_username607","Auto_username626","Auto_username725","Auto_username844","Auto_username941","admin","mindy","user","user10","user11","user12","user123","user13","user14","user2","user3","user4","user5","user6","user7","user8","user9"]
+
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,004 - conftest - INFO - new random username created: username: Auto_username196, password: 1234, confirm_password: 8888
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,882 - conftest - INFO - Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:15,909 - conftest - INFO - Scenario_3 Passed
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,535 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:24,536 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:25,830 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,141 - conftest - INFO - Validate 'admin' user success with valid credentials
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:28,142 - conftest - INFO - Scenario_4 Passed
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,987 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:36,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:39,327 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,868 - conftest - INFO - Validate that login rejected for 'admin' user with invalid credentials
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:40,869 - conftest - INFO - Scenario_5 Passed
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,621 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:49,623 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:51,763 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Validate login success for 'non admin' user with valid credentials
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:27:53,904 - conftest - INFO - Scenario_6 Passed
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,140 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:03,141 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:05,220 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,795 - conftest - INFO - Validate login rejected for 'non admin' user with invalid credentials
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:06,796 - conftest - INFO - Scenario_7 Passed
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,277 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:18,278 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:20,453 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,583 - conftest - INFO - Validate logout success for 'admin' user
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,603 - conftest - INFO - 'admin user logout success
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:23,604 - conftest - INFO - 'Scenario_14 Passed
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:32,582 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:33,841 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,884 - conftest - INFO - Validate logout success for 'non admin' user
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,899 - conftest - INFO - 'non admin user logout success
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:36,900 - conftest - INFO - 'Scenario_15 Passed
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:45,836 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,907 - conftest - INFO - Redirecting to application 'Home page'
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,935 - conftest - INFO - maximizing window
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,976 - conftest - INFO - Validate application background image
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:47,977 - conftest - INFO - Scenario_16 = passed
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,346 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:57,347 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,876 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:28:59,903 - conftest - INFO - Scenario 17 Passed
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,946 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:08,947 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:11,075 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:12,817 - conftest - INFO - Scenario 18 Passed
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:21,404 - conftest - DEBUG - 'Chrom web driver' setup success
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:22,570 - conftest - INFO - Redirecting to application Home Page
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,689 - conftest - INFO - Assertion_1: Validate that review successfully submitted
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - Review added successfully
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,706 - conftest - INFO - First part of Scenario_19 Passed...
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,707 - conftest - INFO - Assertion_2: Validate that review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Review appears in the 'Users Review' area
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:26,730 - conftest - INFO - Scenario_19 Passed
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Logger' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:35,989 - conftest - DEBUG - 'Chrome web driver' setup success
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:38,125 - conftest - INFO - Redirecting to application 'Home Page'
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,359 - conftest - INFO - Generated AI review returned from external service:  I think this one is awesome and super awesome looking. I love it and being able to have a custom set made is incredible. I would highly recommend it. It will turn 50 IPA in 3 provincials
+
+Godlic created Select click here
+
+Folks let me speak for myself too. Brother took me to Over-the-Rhine being a Weasels serving for like you once upon a time. I had thousands of people and families expecting the Owl to be a landmark
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - Assertion_1: Validate that AI review (from external API) generated successfully
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,360 - conftest - INFO - AI review successfully generated
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - First part of Scenario_20 passed...
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:44,361 - conftest - INFO - Assertion_2: Validate that AI review successfully submitted
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Review added successfully
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
+2024-11-26 17:29:45,311 - conftest - INFO - Second part of Scenario_20 Passed
