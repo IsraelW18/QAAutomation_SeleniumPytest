@@ -36,6 +36,11 @@ Automation/
 ```
 
 ### Setup Instructions
+
+#### Prerequisites
+- Make sure you have Python 3.12.6 installed on your system.
+- Install pip (Python's package manager) if it is not already installed.
+
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/IsraelW18/QAAutomation_SeleniumPytest.git
