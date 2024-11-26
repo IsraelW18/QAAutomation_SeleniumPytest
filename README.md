@@ -17,8 +17,23 @@ This repository serves as a portfolio project showcasing my skills in QA automat
 - **Git**: Version control.
 
 ### Project Structure
-Automation/ ├── .venv/ # Virtual environment ├── assets/ # Assets directory (currently empty) ├── test_images/ # Test images for automation │ ├── AutoTestCar.jpg │ ├── AutoTestCar_bak.jpg │ └── AutoTestCar_bak_2.jpg ├── conftest.py # Shared fixtures and setup ├── README.md # Project description ├── report.html # Test execution report ├── test_admin.py # Tests for admin-related functionality ├── test_auth.py # Tests for authentication functionality ├── test_gallery.py # Tests for gallery-related functionality ├── test_third.log # Log file for third test execution └── users.txt # File containing user data for testing
-
+```bash
+Automation/
+├── .venv/                 # Virtual environment
+├── assets/                # Assets directory (currently empty)
+├── test_images/           # Test images for automation
+│   ├── AutoTestCar.jpg
+│   ├── AutoTestCar_bak.jpg
+│   └── AutoTestCar_bak_2.jpg
+├── conftest.py            # Shared fixtures and setup
+├── README.md              # Project description
+├── report.html            # Test execution report
+├── test_admin.py          # Tests for admin-related functionality
+├── test_auth.py           # Tests for authentication functionality
+├── test_gallery.py        # Tests for gallery-related functionality
+├── test_third.log         # Log file for third test execution
+└── users.txt              # File containing user data for testing
+```
 
 ### Setup Instructions
 1. **Clone the repository**:
