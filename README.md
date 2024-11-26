@@ -17,22 +17,25 @@ Pytest: Framework for organizing and executing tests.
 Git: Version control.
 
 ### Project Structure
-QAAutomation_SeleniumPytest/
+Automation/
 │
-├── tests/                 # Test cases
-│   ├── test_example.py    # Sample test case
-│   └── conftest.py        # Shared fixtures and setup
+├── .venv/                 # Virtual environment
 │
-├── pages/                 # Page Object Model implementation
-│   ├── base_page.py       # Base page class
-│   └── login_page.py      # Example of a specific page class
+├── assets/                # Assets directory (currently empty)
 │
-├── utils/                 # Utility functions and helpers
-│   └── driver_factory.py  # WebDriver setup
+├── test_images/           # Test images for automation
+│   ├── AutoTestCar.jpg
+│   ├── AutoTestCar_bak.jpg
+│   └── AutoTestCar_bak_2.jpg
 │
-├── requirements.txt       # Project dependencies
+├── conftest.py            # Shared fixtures and setup
 ├── README.md              # Project description
-└── pytest.ini             # Pytest configuration
+├── report.html            # Test execution report
+├── test_admin.py          # Tests for admin-related functionality
+├── test_auth.py           # Tests for authentication functionality
+├── test_gallery.py        # Tests for gallery-related functionality
+├── test_third.log         # Log file for third test execution
+└── users.txt              # File containing user data for testing
 
 ### Setup Instructions
 #### 1. Clone the repository:
