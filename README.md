@@ -3,7 +3,7 @@
 ### Overview
 This repository serves as a portfolio project showcasing my skills in QA automation and Python development. It demonstrates the development and execution of automated tests using Python, Selenium, and Pytest. The project includes comprehensive UI tests, API tests, as well as validations for both server-side and client-side functionality. These tests are designed to run on a custom web application I developed, [Car Sphere (Live)](https://carsphere.onrender.com/), using Python and Flask, leveraging SQLite and SQLAlchemy for database management.
 
-The source code for the project is available in the [CarSphere Repository](https://github.com/IsraelW18/CarSphere.git).
+The source code for the project is available in my [CarSphere Repository](https://github.com/IsraelW18/CarSphere.git).
 
 The automated testing suite ensures the reliability, scalability, and robustness of the application by covering multiple layers:
 - UI Tests: Validate the functionality and behavior of the web interface.
