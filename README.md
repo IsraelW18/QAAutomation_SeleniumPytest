@@ -1,7 +1,14 @@
 # QA Automation Portfolio Project
 
 ### Overview
-This repository serves as a portfolio project showcasing my skills in QA automation. It demonstrates the development and execution of automated UI tests using Python, Selenium, and Pytest. The project highlights my ability to create robust, efficient, and scalable automation frameworks, adhering to best practices in software testing.
+This repository serves as a portfolio project showcasing my skills in QA automation and Python development. It demonstrates the development and execution of automated tests using Python, Selenium, and Pytest. The project includes comprehensive UI tests, API tests, as well as validations for both server-side and client-side functionality. These tests are designed to run on a custom web application I developed, [Car Sphere](https://carsphere.onrender.com/), using Python and Flask, leveraging SQLite and SQLAlchemy for database management.
+
+The automated testing suite ensures the reliability, scalability, and robustness of the application by covering multiple layers:
+- UI Tests: Validate the functionality and behavior of the web interface.
+- API Tests: Ensure that API endpoints work as expected and return the correct responses.
+- Server-Side Tests: Verify the backend logic and database interactions.
+- Client-Side Tests: Check client-side behavior, such as JavaScript validations and DOM manipulations.
+- The project highlights not only my ability to create comprehensive and efficient automation frameworks but also my proficiency in developing scalable web applications using Python and Flask, adhering to best practices in software testing and development.
 
 ### Features
 - Automation of end-to-end test cases for web applications.
