@@ -51,4 +51,4 @@ Automation/ ├── .venv/ # Virtual environment ├── assets/ # Assets di
    pytest --html=report.html --self-contained-html
 
 ## Contact
-For any questions or feedback, feel free to reach out via GitHub or LinkedIn.
+For any questions or feedback, feel free to reach out via [GitHub](https://github.com/IsraelW18) or [LinkedIn](https://www.linkedin.com/in/israel-wasserman/).
