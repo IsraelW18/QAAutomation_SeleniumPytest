@@ -3,11 +3,332 @@
   <head>
     <meta charset="utf-8"/>
     <title id="head-title">report.html</title>
-      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+      <style type="text/css">body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  /* do not increase min-width as some may use split screens */
+  min-width: 800px;
+  color: #999;
+}
+
+h1 {
+  font-size: 24px;
+  color: black;
+}
+
+h2 {
+  font-size: 16px;
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+a {
+  color: #999;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/******************************
+ * SUMMARY INFORMATION
+ ******************************/
+#environment td {
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  vertical-align: top;
+}
+#environment tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+#environment ul {
+  margin: 0;
+  padding: 0 20px;
+}
+
+/******************************
+ * TEST RESULT COLORS
+ ******************************/
+span.passed,
+.passed .col-result {
+  color: green;
+}
+
+span.skipped,
+span.xfailed,
+span.rerun,
+.skipped .col-result,
+.xfailed .col-result,
+.rerun .col-result {
+  color: orange;
+}
+
+span.error,
+span.failed,
+span.xpassed,
+.error .col-result,
+.failed .col-result,
+.xpassed .col-result {
+  color: red;
+}
+
+.col-links__extra {
+  margin-right: 3px;
+}
+
+/******************************
+ * RESULTS TABLE
+ *
+ * 1. Table Layout
+ * 2. Extra
+ * 3. Sorting items
+ *
+ ******************************/
+/*------------------
+ * 1. Table Layout
+ *------------------*/
+#results-table {
+  border: 1px solid #e6e6e6;
+  color: #999;
+  font-size: 12px;
+  width: 100%;
+}
+#results-table th,
+#results-table td {
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  text-align: left;
+}
+#results-table th {
+  font-weight: bold;
+}
+
+/*------------------
+ * 2. Extra
+ *------------------*/
+.logwrapper {
+  max-height: 230px;
+  overflow-y: scroll;
+  background-color: #e6e6e6;
+}
+.logwrapper.expanded {
+  max-height: none;
+}
+.logwrapper.expanded .logexpander:after {
+  content: "collapse [-]";
+}
+.logwrapper .logexpander {
+  z-index: 1;
+  position: sticky;
+  top: 10px;
+  width: max-content;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px 7px;
+  margin: 10px 0 10px calc(100% - 80px);
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+.logwrapper .logexpander:after {
+  content: "expand [+]";
+}
+.logwrapper .logexpander:hover {
+  color: #000;
+  border-color: #000;
+}
+.logwrapper .log {
+  min-height: 40px;
+  position: relative;
+  top: -50px;
+  height: calc(100% + 50px);
+  border: 1px solid #e6e6e6;
+  color: black;
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px;
+  padding-right: 80px;
+  white-space: pre-wrap;
+}
+
+div.media {
+  border: 1px solid #e6e6e6;
+  float: right;
+  height: 240px;
+  margin: 0 5px;
+  overflow: hidden;
+  width: 320px;
+}
+
+.media-container {
+  display: grid;
+  grid-template-columns: 25px auto 25px;
+  align-items: center;
+  flex: 1 1;
+  overflow: hidden;
+  height: 200px;
+}
+
+.media-container--fullscreen {
+  grid-template-columns: 0px auto 0px;
+}
+
+.media-container__nav--right,
+.media-container__nav--left {
+  text-align: center;
+  cursor: pointer;
+}
+
+.media-container__viewport {
+  cursor: pointer;
+  text-align: center;
+  height: inherit;
+}
+.media-container__viewport img,
+.media-container__viewport video {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.media__name,
+.media__counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 0 0 25px;
+  align-items: center;
+}
+
+.collapsible td:not(.col-links) {
+  cursor: pointer;
+}
+.collapsible td:not(.col-links):hover::after {
+  color: #bbb;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.col-result {
+  width: 130px;
+}
+.col-result:hover::after {
+  content: " (hide details)";
+}
+
+.col-result.collapsed:hover::after {
+  content: " (show details)";
+}
+
+#environment-header h2:hover::after {
+  content: " (hide details)";
+  color: #bbb;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#environment-header.collapsed h2:hover::after {
+  content: " (show details)";
+  color: #bbb;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/*------------------
+ * 3. Sorting items
+ *------------------*/
+.sortable {
+  cursor: pointer;
+}
+.sortable.desc:after {
+  content: " ";
+  position: relative;
+  left: 5px;
+  bottom: -12.5px;
+  border: 10px solid #4caf50;
+  border-bottom: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.sortable.asc:after {
+  content: " ";
+  position: relative;
+  left: 5px;
+  bottom: 12.5px;
+  border: 10px solid #4caf50;
+  border-top: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.hidden, .summary__reload__button.hidden {
+  display: none;
+}
+
+.summary__data {
+  flex: 0 0 550px;
+}
+.summary__reload {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+.summary__reload__button {
+  flex: 0 0 300px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  background-color: #4caf50;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.summary__reload__button:hover {
+  background-color: #46a049;
+}
+.summary__spacer {
+  flex: 0 0 550px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters,
+.collapse {
+  display: flex;
+  align-items: center;
+}
+.filters button,
+.collapse button {
+  color: #999;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.filters button:hover,
+.collapse button:hover {
+  color: #ccc;
+}
+
+.filter__label {
+  margin-right: 10px;
+}
+
+      </style>
+    
   </head>
   <body>
     <h1 id="title">report.html</h1>
-    <p>Report generated on 10-Nov-2024 at 19:18:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+    <p>Report generated on 26-Nov-2024 at 17:07:38 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
         v4.1.1</p>
     <div id="environment-header">
       <h2>Environment</h2>
@@ -61,7 +382,7 @@
         <h2>Summary</h2>
         <div class="additional-summary prefix">
         </div>
-        <p class="run-count">3 tests took 00:00:21.</p>
+        <p class="run-count">6 tests took 00:01:10.</p>
         <p class="filter">(Un)check the boxes to filter the results.</p>
         <div class="summary__reload">
           <div class="summary__reload__button hidden" onclick="location.reload()">
@@ -74,7 +395,7 @@
             <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
             <span class="failed">1 Failed,</span>
             <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
-            <span class="passed">2 Passed,</span>
+            <span class="passed">5 Passed,</span>
             <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
             <span class="skipped">0 Skipped,</span>
             <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
@@ -108,7 +429,7 @@
     </table>
   </body>
   <footer>
-    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.6&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.22631-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.3&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;test_automation.py::TestArithmetic::test_main_page_background&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_automation.py::TestArithmetic::test_main_page_background&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_automation.py::TestArithmetic::test_main_page_background&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     conftest:test_automation.py:26 logger setup successfully\nINFO     conftest:test_automation.py:28 web driver setup successfully\nINFO     conftest:test_automation.py:30 GET http request for the main page\nINFO     conftest:test_automation.py:32 maximizing window\nINFO     conftest:test_automation.py:41 Scenario_1 = passed\n\n&#34;}], &#34;test_automation.py::TestArithmetic::test_cars_catalog_item_count&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_automation.py::TestArithmetic::test_cars_catalog_item_count&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_automation.py::TestArithmetic::test_cars_catalog_item_count&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     conftest:test_automation.py:46 logger setup successfully\nINFO     conftest:test_automation.py:48 web driver setup successfully\nINFO     conftest:test_automation.py:50 GET http request for the main page\nINFO     conftest:test_automation.py:59 Scenario_2 = passed\n\n&#34;}], &#34;test_automation.py::TestArithmetic::test_cars_catalog_items_images&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_automation.py::TestArithmetic::test_cars_catalog_items_images&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_automation.py::TestArithmetic::test_cars_catalog_items_images&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_automation.TestArithmetic object at 0x000002389362D460&amp;gt;\nchrome_driver_setup = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;2a61d2dde2b04bb172b13cbc5c87882c&amp;quot;)&amp;gt;\nlogger_setup = &amp;lt;Logger conftest (DEBUG)&amp;gt;\n\n    @pytest.mark.underconstruction\n    def test_cars_catalog_items_images(self, chrome_driver_setup, logger_setup):\n        driver = chrome_driver_setup\n        logger = logger_setup\n        driver.get(&amp;quot;https://carsphere.onrender.com/&amp;quot;)\n        car_images = [&amp;#x27;https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp&amp;#x27;,\n                      &amp;#x27;https://carsphere.onrender.com/static/images/3_Porsche.jpg&amp;#x27;,\n                      &amp;#x27;https://carsphere.onrender.com/static/images/6_Mercedes_BenzSClass.jpg&amp;#x27;,\n                      &amp;#x27;https://carsphere.onrender.com/static/images/9_Jeep_Wrangler.jpg&amp;#x27;,\n                      &amp;#x27;https://carsphere.onrender.com/static/images/8_Ford_Transit.jpg&amp;#x27;,\n                      &amp;#x27;https://carsphere.onrender.com/static/images/7_BMW_7Series.jpg&amp;#x27;]\n        cars_catalog_items = driver.find_elements(By.CLASS_NAME, &amp;quot;car-item&amp;quot;)\n    \n        test_passed = []\n        for car_item in cars_catalog_items:\n    \n            image = car_item.find_element(By.TAG_NAME, &amp;quot;img&amp;quot;).get_attribute(&amp;quot;src&amp;quot;)\n            expected_image = car_images[cars_catalog_items.index(car_item)]\n            try:\n                assert image == expected_image\n            except AssertionError as e:\n                logger.error(f&amp;quot;got {image} which is incorrect, expected {expected_image}&amp;quot;)\n                test_passed.append(False)\n                raise AssertionError(e)\n            else:\n                test_passed.append(True)\n            finally:\n                continue\n    \n        if not test_passed:\n            print(&amp;quot;Scenario 3 = no images found&amp;quot;)\n            assert False, &amp;quot;No images found&amp;quot;\n        if all(test_passed):\n            print(&amp;quot;Scenario 3 = passed&amp;quot;)\n        else:\n            print(&amp;quot;Scenario 3 = failed&amp;quot;)\n&amp;gt;           assert False, f&amp;quot;One or more images did not match the expected result&amp;quot;\nE           AssertionError: One or more images did not match the expected result\nE           assert False\n\ntest_automation.py:98: AssertionError\n\n------------------------------ Captured log call -------------------------------\nERROR    conftest:test_automation.py:83 got https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jpg which is incorrect, expected https://carsphere.onrender.com/static/images/1_ToyotaCorolla.jp\n\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.6&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.3&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;test_admin.py::TestAdminActionsPermissions::test_010_add_new_car_action_displayed_for_admin&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_admin.py::TestAdminActionsPermissions::test_010_add_new_car_action_displayed_for_admin&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_admin.py::TestAdminActionsPermissions::test_010_add_new_car_action_displayed_for_admin&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nDEBUG    conftest:test_admin.py:23 &amp;#x27;Logger&amp;#x27; setup success\nDEBUG    conftest:test_admin.py:25 &amp;#x27;Chrome web driver&amp;#x27; setup success\nINFO     conftest:test_admin.py:28 Redirecting to application &amp;#x27;Home Page&amp;#x27;\nINFO     conftest:test_admin.py:34 Validate that &amp;#x27;Add New Car&amp;#x27; option/button displayed for &amp;#x27;admin&amp;#x27; user\nINFO     conftest:test_admin.py:38 Scenario_10 Passed\n\n&#34;}], &#34;test_admin.py::TestAdminActionsPermissions::test_011_delete_action_displayed_for_admin&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_admin.py::TestAdminActionsPermissions::test_011_delete_action_displayed_for_admin&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_admin.py::TestAdminActionsPermissions::test_011_delete_action_displayed_for_admin&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nDEBUG    conftest:test_admin.py:56 &amp;#x27;Logger&amp;#x27; setup success\nDEBUG    conftest:test_admin.py:58 &amp;#x27;Chrome web driver&amp;#x27; setup success\nINFO     conftest:test_admin.py:61 Redirecting to application &amp;#x27;Home Page&amp;#x27;\nINFO     conftest:test_admin.py:67 Validate that &amp;#x27;Delete&amp;#x27; item option displayed for &amp;#x27;admin&amp;#x27; user\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;0&amp;#x27;\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;1&amp;#x27;\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;2&amp;#x27;\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;3&amp;#x27;\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;4&amp;#x27;\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;5&amp;#x27;\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;6&amp;#x27;\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;7&amp;#x27;\nINFO     conftest:test_admin.py:73 Deleted button exist for Car item No.&amp;#x27;8&amp;#x27;\nINFO     conftest:test_admin.py:80 Scenario_11 Passed\n\n&#34;}], &#34;test_admin.py::TestAdminActionsPermissions::test_012_add_new_car_action_hidden_for_non_admin&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_admin.py::TestAdminActionsPermissions::test_012_add_new_car_action_hidden_for_non_admin&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_admin.py::TestAdminActionsPermissions::test_012_add_new_car_action_hidden_for_non_admin&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nDEBUG    conftest:test_admin.py:96 &amp;#x27;Logger&amp;#x27; setup success\nDEBUG    conftest:test_admin.py:98 &amp;#x27;Chrome web driver&amp;#x27; setup success\nINFO     conftest:test_admin.py:101 Redirecting to application &amp;#x27;Home Page&amp;#x27;\nINFO     conftest:test_admin.py:108 Validate that &amp;#x27;Add New Car&amp;#x27; option/button is hidden for &amp;#x27;non admin&amp;#x27; user\nINFO     conftest:test_admin.py:112 Scenario_12 Passed\n\n&#34;}], &#34;test_admin.py::TestAdminActionsPermissions::test_013_delete_action_hidden_for_non_admin&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_admin.py::TestAdminActionsPermissions::test_013_delete_action_hidden_for_non_admin&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_admin.py::TestAdminActionsPermissions::test_013_delete_action_hidden_for_non_admin&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nDEBUG    conftest:test_admin.py:129 &amp;#x27;Logger&amp;#x27; setup success\nDEBUG    conftest:test_admin.py:131 &amp;#x27;Chrome web driver&amp;#x27; setup success\nINFO     conftest:test_admin.py:134 Redirecting to application &amp;#x27;Home Page&amp;#x27;\nINFO     conftest:test_admin.py:142 Validate that &amp;#x27;Delete&amp;#x27; option/button is hidden for &amp;#x27;non admin&amp;#x27; user\nINFO     conftest:test_admin.py:145 scenario_13 Passed\n\n&#34;}], &#34;test_admin.py::TestAdminActions::test_014_admin_action_add_new_car&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_admin.py::TestAdminActions::test_014_admin_action_add_new_car&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_admin.py::TestAdminActions::test_014_admin_action_add_new_car&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_admin.TestAdminActions object at 0x000001EB8F2FB7D0&amp;gt;\nchrome_driver_setup = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;8aba5fc9208034d29a36f513037b2b81&amp;quot;)&amp;gt;\nlogger_setup = &amp;lt;Logger conftest (DEBUG)&amp;gt;\n\n    @pytest.mark.functionalAdminTools\n    def test_014_admin_action_add_new_car(self, chrome_driver_setup, logger_setup):\n        &amp;quot;&amp;quot;&amp;quot;\n        Test Description: Adding a new Car to CarSphere catalog using &amp;#x27;admin&amp;#x27; user\n        :param chrome_driver_setup:\n        :param logger_setup:\n        :return:\n        &amp;quot;&amp;quot;&amp;quot;\n        logger = logger_setup\n        logger.debug(&amp;quot;&amp;#x27;Logger&amp;#x27; setup success&amp;quot;)\n        driver = chrome_driver_setup\n        logger.debug(&amp;quot;&amp;#x27;Chrome web driver&amp;#x27; setup success&amp;quot;)\n        print(&amp;quot;Scenario_14 Begin&amp;quot;)\n        driver. get(&amp;quot;https://carsphere.onrender.com/&amp;quot;)\n        logger.info(&amp;quot;Redirecting to application &amp;#x27;Home Page&amp;#x27;&amp;quot;)\n        driver.find_element(By.XPATH, &amp;quot;//nav/a[@href=&amp;#x27;/login&amp;#x27;]&amp;quot;).click()\n        driver.find_element(By.XPATH, &amp;quot;//div/input[@id=&amp;#x27;username&amp;#x27;]&amp;quot;).send_keys(&amp;quot;admin&amp;quot;)\n        driver.find_element(By.XPATH, &amp;quot;//div/input[@id=&amp;#x27;password&amp;#x27;]&amp;quot;).send_keys(&amp;quot;admin&amp;quot;)\n        driver.find_element(By.XPATH, &amp;quot;//form/button[@type=&amp;#x27;submit&amp;#x27;]&amp;quot;).click()\n        driver.find_element(By.XPATH, &amp;quot;//nav/a[@href=&amp;#x27;/add_car&amp;#x27;]&amp;quot;).click()\n        # Generate a random Car maker\n        make_input = &amp;quot;Auto Make Tesla&amp;quot; + &amp;#x27;&amp;#x27;.join(random.choices(string.digits, k=3))\n        driver.find_element(By.XPATH, &amp;quot;//input[@id=&amp;#x27;make&amp;#x27;]&amp;quot;).send_keys(make_input)\n        # Generate a random Car model\n        model_input = &amp;quot;Auto Model Y&amp;quot; + &amp;#x27;&amp;#x27;.join(random.choices(string.digits, k=3))\n        driver.find_element(By.XPATH, &amp;quot;//input[@id=&amp;#x27;model&amp;#x27;]&amp;quot;).send_keys(model_input)\n        # Generate a random Car Year to be selected in the &amp;#x27;Year&amp;#x27; combobox\n        years_combobox_elements = driver.find_elements(By.XPATH, &amp;quot;//select/option&amp;quot;)\n        random_index = random.randint(1, 18)\n        for year in years_combobox_elements:\n            if years_combobox_elements.index(year) == random_index:\n                year.click()\n                break\n        # Generate a random Director\n        director_input = &amp;quot;Auto Director &amp;quot; + &amp;#x27;&amp;#x27;.join(random.choices(string.digits, k=3))\n        driver.find_element(By.XPATH, &amp;quot;//input[@id=&amp;#x27;director&amp;#x27;]&amp;quot;).send_keys(director_input)\n        # Generate a random Main Settings\n        main_settings_input = &amp;quot;Auto Main Settings &amp;quot; + &amp;#x27;&amp;#x27;.join(random.choices(string.digits, k=3))\n        driver.find_element(By.ID, &amp;quot;main_settings&amp;quot;).send_keys(main_settings_input)\n        # Generate a random Description\n        description_input = &amp;quot;Auto Description &amp;quot; + &amp;#x27;&amp;#x27;.join(random.choices(string.digits, k=3))\n        driver.find_element(By.XPATH, &amp;quot;//div/textarea[@name=&amp;#x27;description&amp;#x27;]&amp;quot;).send_keys(description_input)\n        # Selecting an image from PC\n        file_picture_input = driver.find_element(By.XPATH, &amp;quot;//input[@id=&amp;#x27;image_file&amp;#x27;]&amp;quot;)\n        file_picture_input.send_keys(os.path.abspath(&amp;quot;.\\\\test_images\\\\AutoTestCar.jpg&amp;quot;))\n        driver.find_element(By.XPATH, &amp;quot;//input[@id=&amp;#x27;submit&amp;#x27;]&amp;quot;).click()\n        add_car_success_message = driver.find_element(By.XPATH, &amp;quot;//div/div[@class=&amp;#x27;alert alert-success&amp;#x27;]&amp;quot;).text\n        # Validate that new car is added to CarSphere catalog when logged-in with &amp;#x27;admin user\n        logger.info(&amp;quot;Validate that new car is added to CarSphere catalog when logged-in with &amp;#x27;admin user&amp;quot;)\n&amp;gt;       assert (add_car_success_message ==\n                f&amp;quot;Car {make_input} {model_input} added successfully&amp;quot;), (&amp;quot;Failed to add&amp;quot;\n                                                                         &amp;quot; new Car to Catalog\\nScenario_14 Failed&amp;quot;)\nE       AssertionError: Failed to add new Car to Catalog\nE         Scenario_14 Failed\nE       assert &amp;#x27;Car Auto Mak...successfully!&amp;#x27; == &amp;#x27;Car Auto Mak... successfully&amp;#x27;\nE         \nE         Skipping 46 identical leading characters in diff, use -v to show\nE         - uccessfully\nE         + uccessfully!\nE         ?            +\n\ntest_admin.py:207: AssertionError\n\n------------------------------ Captured log call -------------------------------\nDEBUG    conftest:test_admin.py:167 &amp;#x27;Logger&amp;#x27; setup success\nDEBUG    conftest:test_admin.py:169 &amp;#x27;Chrome web driver&amp;#x27; setup success\nINFO     conftest:test_admin.py:172 Redirecting to application &amp;#x27;Home Page&amp;#x27;\nINFO     conftest:test_admin.py:206 Validate that new car is added to CarSphere catalog when logged-in with &amp;#x27;admin user\n\n&#34;}], &#34;test_admin.py::TestAdminActions::test_015_admin_action_delete_car&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_admin.py::TestAdminActions::test_015_admin_action_delete_car&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_admin.py::TestAdminActions::test_015_admin_action_delete_car&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nDEBUG    conftest:test_admin.py:226 &amp;#x27;Logger&amp;#x27; setup success\nDEBUG    conftest:test_admin.py:228 &amp;#x27;Chrome web driver&amp;#x27; setup success\nINFO     conftest:test_admin.py:231 Redirecting to application &amp;#x27;Home Page&amp;#x27;\nINFO     conftest:test_admin.py:240 Validate that existing car is deleted from CarSphere catalog when logged-in with &amp;#x27;admin&amp;#x27; user\nINFO     conftest:test_admin.py:243 Car successfully deleted from CarSphere catalog\nINFO     conftest:test_admin.py:244 Scenario_15 Passed\n\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
     <script>
       (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
