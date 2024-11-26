@@ -17,46 +17,38 @@ This repository serves as a portfolio project showcasing my skills in QA automat
 - **Git**: Version control.
 
 ### Project Structure
-
 Automation/ ├── .venv/ # Virtual environment ├── assets/ # Assets directory (currently empty) ├── test_images/ # Test images for automation │ ├── AutoTestCar.jpg │ ├── AutoTestCar_bak.jpg │ └── AutoTestCar_bak_2.jpg ├── conftest.py # Shared fixtures and setup ├── README.md # Project description ├── report.html # Test execution report ├── test_admin.py # Tests for admin-related functionality ├── test_auth.py # Tests for authentication functionality ├── test_gallery.py # Tests for gallery-related functionality ├── test_third.log # Log file for third test execution └── users.txt # File containing user data for testing
 
-bash
-Copy code
 
 ### Setup Instructions
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/IsraelW18/QAAutomation_SeleniumPytest.git
-Navigate to the project directory:
 
-bash
-Copy code
-cd QAAutomation_SeleniumPytest
-Install the required dependencies:
+2. **Navigate to the project directory**:
+   ```bash
+   git clone https://github.com/IsraelW18/QAAutomation_SeleniumPytest.git
+   
+3. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
 
-bash
-Copy code
-pip install -r requirements.txt
-Run the tests:
+4. **Run the test**:
+   ```bash
+   pytest
 
-bash
-Copy code
-pytest
-How to Run Tests
-Run all tests:
+### How to Run Tests
+*  **Run all test**:
+   ```bash
+   pytest
 
-bash
-Copy code
-pytest
-Run a specific test file:
+*  **Run a specific test file**:
+   ```bash
+   pytest tests/<test_example.py>
 
-bash
-Copy code
-pytest tests/<test_example.py>
-Generate detailed test reports:
+*  **Generate detailed test reports**:
+   ```bash
+   pytest --html=report.html --self-contained-html
 
-bash
-Copy code
-pytest --html=report.html --self-contained-html
-Contact
+## Contact
 For any questions or feedback, feel free to reach out via GitHub or LinkedIn.
