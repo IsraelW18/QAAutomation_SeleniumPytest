@@ -16,7 +16,8 @@ Selenium WebDriver: For browser automation.
 Pytest: Framework for organizing and executing tests.
 Git: Version control.
 
-### Project Structure
+### Project Structure ###
+
 Automation/
 ├── .venv/                 # Virtual environment
 ├── assets/                # Assets directory (currently empty)
