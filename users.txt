@@ -71,3 +71,5 @@ username: Auto_username043, password: 1234
 username: Auto_username189, password: 1234, conform_password: 8888
 username: Auto_username607, password: 1234
 username: Auto_username196, password: 1234, conform_password: 8888
+username: Auto_username345, password: 1234
+username: Auto_username654, password: 1234, conform_password: 8888
