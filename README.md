@@ -38,6 +38,7 @@ Automation/
 ├── conftest.py            # Shared fixtures and setup
 ├── README.md              # Project description
 ├── report.html            # Test execution report
+├── requirements.txt       # Requirements file for project dependencies installation
 ├── test_admin.py          # Tests for admin-related functionality
 ├── test_auth.py           # Tests for authentication functionality
 ├── test_gallery.py        # Tests for gallery-related functionality
