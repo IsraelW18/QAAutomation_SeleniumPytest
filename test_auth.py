@@ -1,4 +1,4 @@
-"""This module includes testing for users authentication - Signup. Login"""
+"""This module includes testing for users authentication - Sign-up & Login"""
 import string
 import random
 from selenium.webdriver.common.by import By
