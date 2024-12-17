@@ -1,4 +1,44 @@
-"""This module includes testing for CarSphere gallery"""
+"""
+Module: test_gallery
+
+Description:
+This module contains automated test scenarios for the CarSphere application, focusing on:
+1. GUI elements and redirection testing for the CarSphere gallery.
+2. User reviews functionality, including manual reviews and AI-generated reviews.
+
+Key Areas Tested:
+- **Main Page Background**: Ensures that the website background image is correct.
+- **Branding and Social Links**: Verifies proper URL redirection for branding and LinkedIn icons.
+- **User Reviews**: Tests user ability to add manual reviews and validate the AI-generated reviews functionality.
+
+Test Classes:
+1. `TestGUIAndRedirections`:
+   - Tests GUI components and icon-based redirections (Scenarios 16-18).
+2. `TestReviews`:
+   - Tests user manual reviews and AI-generated reviews submission (Scenarios 19-20).
+
+Test Scenarios:
+- **Scenario_16**: Validate main page background image.
+- **Scenario_17**: Validate the CarSphere branding icon redirection URL.
+- **Scenario_18**: Validate LinkedIn icon redirection.
+- **Scenario_19**: Test user manual review submission and its visibility.
+- **Scenario_20**: Test AI review generation and submission functionality.
+
+Fixtures:
+- `chrome_driver_setup`: Provides a configured Chrome WebDriver for browser automation.
+- `logger_setup`: Provides a logger instance for logging test execution details.
+
+Preconditions:
+- The CarSphere application must be running and accessible at the predefined URL.
+- Chrome WebDriver must be installed and configured for Selenium.
+- User accounts (e.g., admin and regular users) must exist in the system.
+- AI review generation service must be functional for Scenario 20.
+
+Usage:
+Run the tests using pytest:
+```bash
+    pytest test_gallery.py
+"""
 import random
 import string
 import pytest
@@ -8,17 +48,71 @@ from selenium.webdriver.support import expected_conditions as EC
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
 class TestGUIAndRedirections:
-    """This class groups the Cars gallery GUI testing"""
+    """
+    Test Class: TestGUIAndRedirections
+
+    This class groups all GUI-related tests and redirection validations for the CarSphere application.
+    It focuses on verifying the correct appearance, behavior, and functionality of graphical elements on the Cars gallery page,
+    ensuring a consistent user experience and proper navigation behavior.
+
+    Key Objectives:
+    1. Validate the main page background image to ensure it matches the expected design.
+    2. Test branding icon functionality, ensuring it redirects correctly to the application's Home Page.
+    3. Verify the LinkedIn icon redirection, confirming it navigates to the correct LinkedIn profile.
+
+    Test Scenarios:
+    - **Scenario_16**: Verify that the main page background image is displayed correctly.
+    - **Scenario_17**: Validate that the CarSphere branding icon redirects to the Home Page.
+    - **Scenario_18**: Confirm that the LinkedIn icon redirects to the 'Israel-Wasserman' LinkedIn profile.
+
+    Fixtures:
+    - `chrome_driver_setup`: Provides a Selenium Chrome WebDriver instance for browser automation.
+    - `logger_setup`: Provides a logger instance for recording detailed test execution steps and results.
+
+    Preconditions:
+    - The CarSphere application must be running and accessible at the predefined URL.
+    - Chrome WebDriver must be installed and configured for Selenium.
+    - Proper internet access to validate external links (e.g., LinkedIn).
+
+    Execution:
+    Run the tests using pytest with the following markers:
+    - **smoke**: For quick checks on GUI appearance (Scenario 16).
+    - **system** and **functional**: For redirection and link functionality validation (Scenarios 17 and 18).
+    """
 
     """Scenario_16"""
     @pytest.mark.smoke
     @pytest.mark.gui
     def test_016_main_page_background(self, chrome_driver_setup, logger_setup):
         """
-        Test Description: Testing the main website background image.
-        :param chrome_driver_setup:
-        :param logger_setup:
-        :return:
+        Test Scenario: test_016_main_page_background
+
+        Test Description:
+        This test verifies that the main website background image is displayed correctly on the CarSphere homepage.
+        The test navigates to the homepage, retrieves the `background-image` CSS property, and compares it with the expected image URL.
+
+        Test Steps:
+        1. Open the CarSphere homepage in a Chrome browser.
+        2. Maximize the browser window to ensure full visibility.
+        3. Retrieve the CSS `background-image` property of the `<body>` element.
+        4. Compare the retrieved background image URL to the expected URL.
+
+        Assertions:
+        - The background image URL matches the predefined expected URL.
+
+        Preconditions:
+        - The CarSphere application must be running and accessible at the predefined URL.
+        - Chrome browser and WebDriver must be available for test execution.
+
+        Parameters:
+        :param chrome_driver_setup: Fixture that provides a configured Chrome WebDriver instance.
+        :param logger_setup: Fixture that provides a logger instance for recording test execution logs.
+
+        Test Results:
+        - On Success: Logs indicate that the background image matches the expected URL, and the test passes.
+        - On Failure: Logs the discrepancy in the background image and raises an `AssertionError`.
+
+        :return: None. The test performs assertions and logs results.
         """
         logger = logger_setup
         logger.debug("'Logger' setup success")
@@ -51,10 +145,34 @@ class TestGUIAndRedirections:
     @pytest.mark.functional
     def test_017_branding_link(self, chrome_driver_setup, logger_setup):
         """
-        Test Description: Testing the CarSphere branding image URL (redirection to Home)
-        :param chrome_driver_setup:
-        :param logger_setup:
-        :return:
+        Test Scenario: test_017_branding_link
+
+        Test Description:
+        This test verifies that the CarSphere branding image displays the correct source URL and ensures its functionality
+        by validating that the branding icon links to the expected image location.
+
+        Test Steps:
+        1. Open the CarSphere homepage in a Chrome browser.
+        2. Locate the branding icon element using its class name.
+        3. Retrieve the `src` attribute (URL) of the branding icon.
+        4. Compare the retrieved URL to the predefined expected branding image URL.
+
+        Assertions:
+        - The branding icon's source URL matches the expected image URL.
+
+        Preconditions:
+        - The CarSphere application must be running and accessible at the predefined URL.
+        - Chrome browser and WebDriver must be available for test execution.
+
+        Parameters:
+        :param chrome_driver_setup: Fixture that provides a configured Chrome WebDriver instance for browser automation.
+        :param logger_setup: Fixture that provides a logger instance for logging the test execution steps and results.
+
+        Test Results:
+        - On Success: Logs confirm that the branding icon's source matches the expected URL, and the test passes.
+        - On Failure: Logs the discrepancy in the branding icon URL and raises an `AssertionError`.
+
+        :return: None. The test validates the branding link and logs the outcome.
         """
         logger = logger_setup
         logger.debug("'Logger' setup success")
@@ -84,10 +202,36 @@ class TestGUIAndRedirections:
     @pytest.mark.functional
     def test_018_linkedin_icon_link(self, chrome_driver_setup, logger_setup):
         """
-        Test Description: Testing the LinkedIn icon URL (redirection to "Israel-Wasserman" LinkedIn profile)
-        :param chrome_driver_setup:
-        :param logger_setup:
-        :return:
+        Test Scenario: test_018_linkedin_icon_link
+
+        Test Description:
+        This test verifies that the LinkedIn icon on the CarSphere homepage redirects to the correct LinkedIn profile
+        ("Israel-Wasserman" profile). The test ensures that the LinkedIn icon link functions properly.
+
+        Test Steps:
+        1. Open the CarSphere homepage in a Chrome browser.
+        2. Locate the LinkedIn icon element using its XPath.
+        3. Click the LinkedIn icon to open the redirection URL in a new browser tab.
+        4. Switch to the new browser tab and retrieve the current URL.
+        5. Verify that the URL contains the expected profile identifier: "israel-wasserman".
+
+        Assertions:
+        - The current URL in the new tab contains the expected LinkedIn profile identifier.
+
+        Preconditions:
+        - The CarSphere application must be running and accessible at the predefined URL.
+        - Chrome browser and WebDriver must be available for test execution.
+        - The LinkedIn profile link must be active and functional.
+
+        Parameters:
+        :param chrome_driver_setup: Fixture that provides a configured Chrome WebDriver instance for browser automation.
+        :param logger_setup: Fixture that provides a logger instance for logging test execution details.
+
+        Test Results:
+        - On Success: Logs confirm that the LinkedIn icon redirects to the expected LinkedIn profile, and the test passes.
+        - On Failure: Logs the discrepancy in the URL and raises an `AssertionError`.
+
+        :return: None. The test validates LinkedIn icon functionality and logs the outcome.
         """
         logger = logger_setup
         logger.debug("'Logger' setup success")
@@ -124,10 +268,38 @@ class TestReviews:
     @pytest.mark.functional
     def test_019_user_manual_review(self, chrome_driver_setup, logger_setup):
         """
-        Test Description: Testing user manual review
-        :param chrome_driver_setup:
-        :param logger_setup:
-        :return:
+        Test Scenario: test_019_user_manual_review
+
+        Test Description:
+        This test verifies that a user can successfully submit a manual review for a car and ensures the review appears in the
+        'Users Review' section of the CarSphere application.
+
+        Test Steps:
+        1. Open the CarSphere homepage in a Chrome browser.
+        2. Log in to the application using valid user credentials.
+        3. Navigate to the car catalog and select the last car in the list.
+        4. Submit a manual review with randomly generated text.
+        5. Verify that a success message is displayed confirming the review submission.
+        6. Ensure the newly submitted review appears in the 'Users Review' section.
+
+        Assertions:
+        1. The success message confirms that the review was successfully added.
+        2. The review text appears correctly in the 'Users Review' area, matching the submitted content.
+
+        Preconditions:
+        - The CarSphere application must be running and accessible at the predefined URL.
+        - Chrome browser and WebDriver must be available for test execution.
+        - A user account with valid credentials (e.g., `user3`) must exist in the system.
+
+        Parameters:
+        :param chrome_driver_setup: Fixture that provides a configured Chrome WebDriver instance for browser automation.
+        :param logger_setup: Fixture that provides a logger instance for logging test execution details.
+
+        Test Results:
+        - On Success: Logs confirm that the review was successfully submitted and appears in the 'Users Review' area.
+        - On Failure: Logs detail the failure in review submission or visibility and raise an `AssertionError`.
+
+        :return: None. The test validates manual review functionality and logs the outcome.
         """
         logger = logger_setup
         logger.debug("'Logger' setup success")
@@ -169,10 +341,43 @@ class TestReviews:
     @pytest.mark.functional
     def test_020_user_ai_review(self, chrome_driver_setup, logger_setup):
         """
-        Test Description: Testing adding a review using the AI option review generation
-        :param chrome_driver_setup:
-        :param logger_setup:
-        :return:
+        Test Scenario: test_020_user_ai_review
+
+        Test Description:
+        This test verifies that a user can generate and submit a review using the AI review generation option
+        in the CarSphere application. It ensures that the AI-generated review is successfully created and added to the system.
+
+        Test Steps:
+        1. Open the CarSphere homepage in a Chrome browser.
+        2. Log in to the application using valid user credentials.
+        3. Navigate to the car catalog and select the last car in the list.
+        4. Click on the "AI Review" button to trigger the AI review generation process.
+        5. Wait for the AI-generated review to populate the input field.
+        6. Submit the generated review.
+        7. Verify the success message confirming that the review was successfully added.
+
+        Assertions:
+        1. Validate that the AI review input field is populated with generated content (non-empty).
+        2. Confirm that the success message indicates the review was successfully submitted.
+
+        Preconditions:
+        - The CarSphere application must be running and accessible at the predefined URL.
+        - Chrome browser and WebDriver must be available for test execution.
+        - A user account with valid credentials (e.g., `user3`) must exist in the system.
+        - The AI review generation service must be functional and return a response within the timeout window.
+
+        Parameters:
+        :param chrome_driver_setup: Fixture that provides a configured Chrome WebDriver instance for browser automation.
+        :param logger_setup: Fixture that provides a logger instance for logging test execution steps and results.
+
+        Test Results:
+        - On Success:
+          - The AI-generated review is displayed in the input field.
+          - The review submission success message is displayed, confirming successful addition of the review.
+        - On Failure:
+          - Logs detail issues with AI review generation or submission, and the test raises an `AssertionError`.
+
+        :return: None. The test validates AI-generated review functionality and logs the outcome.
         """
         logger = logger_setup
         logger.debug("'Logger' setup success")
