@@ -31,7 +31,7 @@ def chrome_driver_setup():
     service = Service(ChromeDriverManager().install())
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
-    chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--headless")
     driver = webdriver.Chrome(service=service, options=chrome_options)
     return driver
 

@@ -354,15 +354,15 @@ class TestSignUpUser:
             random_username = "Auto_username" + ''.join(random.choices(string.digits, k=3))
         # Preparing not matches passwords for 'Password' and 'Confirm password' fields
         for_password_input = "1234"
-        for_confirma_password_input = "8888"
+        for_confirm_password_input = "8888"
         # Writing the new random username to logger, and also the const password
         logger.info(f"new random username created: username:"
-                    f" {random_username}, password: {for_password_input}, confirm_password: {for_confirma_password_input}")
+                    f" {random_username}, password: {for_password_input}, confirm_password: {for_confirm_password_input}")
         # Copying the new random 'username' and 'password' into a local 'users.txt' file
         try:
             with open("users.txt", "a") as users_file:
                 users_file.write(f"\nusername: {random_username}, "
-                                 f"password: {for_password_input}, conform_password: {for_confirma_password_input}")
+                                 f"password: {for_password_input}, confirm_password: {for_confirm_password_input}")
         except Exception as e:
             logger.error(e, "\nAdding the new random username credentials to 'users.txt' file failed")
         # Continue populating the SignUp form and signing-up a new user
@@ -370,7 +370,7 @@ class TestSignUpUser:
         driver.find_element(By.ID, "lastname").send_keys("QAAuto_LastName")
         driver.find_element(By.ID, "username").send_keys(random_username)
         driver.find_element(By.ID, "password").send_keys(for_password_input)
-        driver.find_element(By.ID, "confirm_password").send_keys(for_confirma_password_input)
+        driver.find_element(By.ID, "confirm_password").send_keys(for_confirm_password_input)
         driver.find_element(By.XPATH, "//button[text()='Sign Up']").click()
         confirm_password_alert = driver.find_element(By.ID, "confirm_pass")
         confirm_password_alert_expected_color = "rgba(255, 0, 0, 1)"
