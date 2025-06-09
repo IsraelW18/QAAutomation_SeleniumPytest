@@ -173,7 +173,7 @@ class TestSignUpUser:
         logger.info(f"new random username created: username: {random_username}, password: {password}")
         # Copying the new random 'username' and 'password' into a local 'users.txt' file
         try:
-            with open("users.txt", "a") as users_file:
+            with open("../users.txt", "a") as users_file:
                 users_file.write(f"\nusername: {random_username}, password: {password}")
         except Exception as e:
             logger.error(e, "\nAdding the new random username credentials to 'users.txt' file failed")
@@ -360,7 +360,7 @@ class TestSignUpUser:
                     f" {random_username}, password: {for_password_input}, confirm_password: {for_confirm_password_input}")
         # Copying the new random 'username' and 'password' into a local 'users.txt' file
         try:
-            with open("users.txt", "a") as users_file:
+            with open("../users.txt", "a") as users_file:
                 users_file.write(f"\nusername: {random_username}, "
                                  f"password: {for_password_input}, confirm_password: {for_confirm_password_input}")
         except Exception as e:
