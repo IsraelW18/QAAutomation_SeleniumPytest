@@ -36,6 +36,8 @@ import random
 from selenium.webdriver.common.by import By
 import pytest
 from selenium.common.exceptions import NoSuchElementException
+from pages.login_page import LoginPage
+from pages.dashboard_page import DashboardPage
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
 class TestAdminActionsPermissions:
@@ -94,25 +96,41 @@ class TestAdminActionsPermissions:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_10 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        # Validate that 'Add New Car' option/button displayed for 'admin' user
-        logger.info("Validate that 'Add New Car' option/button displayed for 'admin' user")
-        try:
-            add_new_car_button = driver.find_element(By.XPATH, "//nav/a[@href='/add_car']")
-            assert add_new_car_button.text == "Add New Car"
-            logger.info("Scenario_10 Passed")
-        except NoSuchElementException as e:
-            logger.error("Expected 'Add New Car button', but element not found")
-            raise NoSuchElementException("Scenario_10 Failed")
+
+        """POM_start_part_1"""
+
+        login_page = LoginPage(driver)
+        dashboard_page = DashboardPage(driver)
+
+        logger.info("Logging in as admin")
+        login_page.navigate_to()
+        login_page.login("admin", "admin")
+
+        logger.info("Validate that 'Add New Car' button displayed for 'admin' user")
+        assert dashboard_page.is_add_new_car_visible(), "Add New Car button not found"
+        logger.info("Scenario_10 Passed")
+
+        # print("Scenario_10 Begin")
+        # driver.get("https://carsphere.onrender.com/")
+        # logger.info("Redirecting to application 'Home Page'")
+        # driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
+        # driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
+        # driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
+        # driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
+        # # Validate that 'Add New Car' option/button displayed for 'admin' user
+        # logger.info("Validate that 'Add New Car' option/button displayed for 'admin' user")
+        # try:
+        #     add_new_car_button = driver.find_element(By.XPATH, "//nav/a[@href='/add_car']")
+        #     assert add_new_car_button.text == "Add New Car"
+        #     logger.info("Scenario_10 Passed")
+        # except NoSuchElementException as e:
+        #     logger.error("Expected 'Add New Car button', but element not found")
+        #     raise NoSuchElementException("Scenario_10 Failed")
 
         driver.close()
-        print("Scenario_10 Finished")
+
+        """POM_finish_part_1"""
+
 
     """Scenario_9"""
     @pytest.mark.functionalAdminTools
@@ -144,32 +162,51 @@ class TestAdminActionsPermissions:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_11 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        # Validate that 'Delete' item option displayed for 'admin' user
-        logger.info("Validate that 'Delete' item option displayed for 'admin' user")
-        test_passed = [True]
-        try:
-            delete_car_buttons = driver.find_elements(By.XPATH, "//div[@class='car-item']/form/button[@class='btn btn-danger']")
-            for delete_btn in delete_car_buttons:
-                assert delete_btn.text == "Delete", test_passed.append(False)
-                logger.info(f"Deleted button exist for Car item No.'{delete_car_buttons.index(delete_btn)}'")
-                test_passed.append(True)
-        except AssertionError as e:
-            logger.error("Expected 'Delete' button, but element not found")
-            raise AssertionError(e)
 
-        if test_passed:
+        """POM start part 2"""
+        # Use POM pages
+        login_page = LoginPage(driver)
+        dashboard_page = DashboardPage(driver)
+
+        # Login
+        logger.info("Logging in as admin")
+        login_page.navigate_to()
+        login_page.login("admin", "admin")
+
+        logger.info("Validate that 'Delete buttons' are visible for admin user")
+        try:
+            assert dashboard_page.are_delete_buttons_visible(), "Delete buttons not found"
             logger.info("Scenario_11 Passed")
-        else:
-            logger.info("Scenario_11 Failed")
+        except AssertionError as e:
+            logger.info(f"Scenario_11 Failed.\n{e}")
+
+
+        # driver.get("https://carsphere.onrender.com/")
+        # logger.info("Redirecting to application 'Home Page'")
+        # driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
+        # driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
+        # driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
+        # driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
+        # # Validate that 'Delete' item option displayed for 'admin' user
+        # logger.info("Validate that 'Delete' item option displayed for 'admin' user")
+        # test_passed = [True]
+        # try:
+        #     delete_car_buttons = driver.find_elements(By.XPATH, "//div[@class='car-item']/form/button[@class='btn btn-danger']")
+        #     for delete_btn in delete_car_buttons:
+        #         assert delete_btn.text == "Delete", test_passed.append(False)
+        #         logger.info(f"Deleted button exist for Car item No.'{delete_car_buttons.index(delete_btn)}'")
+        #         test_passed.append(True)
+        # except AssertionError as e:
+        #     logger.error("Expected 'Delete' button, but element not found")
+        #     raise AssertionError(e)
+        #
+        # if test_passed:
+        #     logger.info("Scenario_11 Passed")
+        # else:
+        #     logger.info("Scenario_11 Failed")
         driver.close()
-        print("Scenario_11 Finished")
+
+        """POM part 2 finished"""
 
     """Scenario_12"""
     @pytest.mark.functionalAdminTools
@@ -201,25 +238,41 @@ class TestAdminActionsPermissions:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_12 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user3")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        add_new_car_button_text = driver.find_elements(By.XPATH, "//nav/a[@href='/add_car']")
-        # Validate that 'Add New Car' option/button is hidden for 'non admin' user
-        logger.info("Validate that 'Add New Car' option/button is hidden for 'non admin' user")
-        try:
-            assert add_new_car_button_text != "Add New Car", \
-                "Element 'Add New Car' button is visible for 'non admin users'. Expected to be hidden"
-            logger.info("Scenario_12 Passed")
-        except AssertionError as e:
-            raise AssertionError("Scenario_12 Failed")
+
+        """POM part 3 start"""
+
+        # Use POM pages
+        login_page = LoginPage(driver)
+        dashboard_page = DashboardPage(driver)
+
+        logger.info("Logging in as Non admin user")
+        login_page.navigate_to()
+        login_page.login("user3", "user3")
+
+        # Validate that 'Add New Car' button do not displayed for non admin users
+        logger.info("Validate that 'Add New Car' button do not displayed for 'Non admin' users ")
+        assert not dashboard_page.is_add_new_car_visible(), "'Add New Car' button is visible for Non admin users"
+        logger.info("Scenario_12 Passed")
+
+        # driver.get("https://carsphere.onrender.com/")
+        # logger.info("Redirecting to application 'Home Page'")
+        # driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
+        # driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
+        # driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user3")
+        # driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
+        # add_new_car_button_text = driver.find_elements(By.XPATH, "//nav/a[@href='/add_car']")
+        # # Validate that 'Add New Car' option/button is hidden for 'non admin' user
+        # logger.info("Validate that 'Add New Car' option/button is hidden for 'non admin' user")
+        # try:
+        #     assert add_new_car_button_text != "Add New Car", \
+        #         "Element 'Add New Car' button is visible for 'non admin users'. Expected to be hidden"
+        #     logger.info("Scenario_12 Passed")
+        # except AssertionError as e:
+        #     raise AssertionError("Scenario_12 Failed")
+
+        """POM part 3 finished"""
 
         driver.close()
-        print("Scenario_12 Finished")
 
     """Scenario_13"""
     @pytest.mark.functionalAdminTools
@@ -251,26 +304,43 @@ class TestAdminActionsPermissions:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_13 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user3")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        delete_car_buttons = driver.find_elements(By.XPATH,
-                                                  "//div[@class='car-item']/form/button[@class='btn btn-danger']")
-        # Validate that 'Delete' option/button is hidden for 'non admin' user
-        logger.info("Validate that 'Delete' option/button is hidden for 'non admin' user")
-        try:
-            assert delete_car_buttons == [], "Expected 'Delete' buttons to be hidden for 'non admin' users. But element is visible"
-            logger.info("scenario_13 Passed")
-        except AssertionError as e:
-            logger.error(f"{e}, Scenario_13 Failed:")
-            raise AssertionError(e)
+
+        """POM part 4 start"""
+
+        # User POM pages
+        login_page = LoginPage(driver)
+        dashboard_page = DashboardPage(driver)
+
+        # Login as 'non admin' user
+        login_page.navigate_to()
+        login_page.login("user3", "user3")
+
+        # Validate that 'Delete' car buttons do not display for 'Non admin' users
+        logger.info("Validate that 'Delete' car buttons do not display for 'Non admin' users ")
+        assert not dashboard_page.are_delete_buttons_visible(), "'Delete' car buttons appear for 'Non admin users'"
+        logger.info("Scenario_13 Passed")
+
+
+        # driver.get("https://carsphere.onrender.com/")
+        # logger.info("Redirecting to application 'Home Page'")
+        # driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
+        # driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
+        # driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user3")
+        # driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
+        # delete_car_buttons = driver.find_elements(By.XPATH,
+        #                                           "//div[@class='car-item']/form/button[@class='btn btn-danger']")
+        # # Validate that 'Delete' option/button is hidden for 'non admin' user
+        # logger.info("Validate that 'Delete' option/button is hidden for 'non admin' user")
+        # try:
+        #     assert delete_car_buttons == [], "Expected 'Delete' buttons to be hidden for 'non admin' users. But element is visible"
+        #     logger.info("scenario_13 Passed")
+        # except AssertionError as e:
+        #     logger.error(f"{e}, Scenario_13 Failed:")
+        #     raise AssertionError(e)
+
+        """POM part 4 finished"""
 
         driver.close()
-        print("Scenario_13 Finished")
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
 class TestAdminActions:
@@ -340,51 +410,95 @@ class TestAdminActions:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_14 Begin")
-        driver. get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        driver.find_element(By.XPATH, "//nav/a[@href='/add_car']").click()
-        # Generate a random Car maker
+
+        """POM part 5 start"""
+
+        # Use POM pages
+        dashboard_page = DashboardPage(driver)
+        login_page = LoginPage(driver)
+
+        logger.info("Logging in as 'admin' user")
+        login_page.navigate_to()
+        login_page.login("admin", "admin")
+        dashboard_page.navigate_to_add_new_car_form()
+
         make_input = "Auto Make Tesla" + ''.join(random.choices(string.digits, k=3))
-        driver.find_element(By.XPATH, "//input[@id='make']").send_keys(make_input)
-        # Generate a random Car model
         model_input = "Auto Model Y" + ''.join(random.choices(string.digits, k=3))
-        driver.find_element(By.XPATH, "//input[@id='model']").send_keys(model_input)
-        # Generate a random Car Year to be selected in the 'Year' combobox
         years_combobox_elements = driver.find_elements(By.XPATH, "//select/option")
         random_index = random.randint(1, 18)
-        for year in years_combobox_elements:
-            if years_combobox_elements.index(year) == random_index:
-                year.click()
-                break
-        # Generate a random Director
+        # for year in years_combobox_elements:
+        #     if years_combobox_elements.index(year) == random_index:
+        #         year.click()
+        #         break
+        logger.info(f"year_combobox_elements: {years_combobox_elements}")
+        logger.info(f"random_index: {random_index}")
+        year_input = years_combobox_elements[random_index]
+        logger.info(f"year_input: {year_input}")
         director_input = "Auto Director " + ''.join(random.choices(string.digits, k=3))
-        driver.find_element(By.XPATH, "//input[@id='director']").send_keys(director_input)
-        # Generate a random Main Settings
-        main_settings_input = "Auto Main Settings " + ''.join(random.choices(string.digits, k=3))
-        driver.find_element(By.ID, "main_settings").send_keys(main_settings_input)
-        # Generate a random Description
+        settings_input = "Auto Settings " + ''.join(random.choices(string.digits, k=3))
         description_input = "Auto Description " + ''.join(random.choices(string.digits, k=3))
-        driver.find_element(By.XPATH, "//div/textarea[@name='description']").send_keys(description_input)
-        # Selecting an image from PC
-        file_picture_input = driver.find_element(By.XPATH, "//input[@id='image_file']")
-        file_picture_input.send_keys(os.path.abspath(".\\test_images\\AutoTestCar.jpg"))
-        driver.find_element(By.XPATH, "//input[@id='submit']").click()
-        add_car_success_message = driver.find_element(By.XPATH, "//div/div[@class='alert alert-success']").text
-        # Validate that new car is added to CarSphere catalog when logged-in with 'admin user
-        logger.info("Validate that new car is added to CarSphere catalog when logged-in with 'admin user")
-        assert (add_car_success_message ==
-                f"Car {make_input} {model_input} added successfully!"), ("Failed to add"
-                                                                         " new Car to Catalog\nScenario_14 Failed")
-        logger.info("New Car successfully added to CarSphere Catalog")
+        image_input = os.path.abspath("./test_images/AutoTestCar.jpg")
+        new_car_added_message_status = dashboard_page.add_new_car(make=make_input,
+                                                                  model=model_input,
+                                                                  year=year_input,
+                                                                  director=director_input,
+                                                                  settings=settings_input,
+                                                                  description=description_input,
+                                                                  image_path=image_input)
+        logger.info(new_car_added_message_status)
+        print(new_car_added_message_status)
+        # Validate that Car successfully added
+        logger.info("Validate that Car successfully added")
+        assert new_car_added_message_status, "New car did not added"
         logger.info("Scenario_14 Passed")
 
+
+        # driver. get("https://carsphere.onrender.com/")
+        # logger.info("Redirecting to application 'Home Page'")
+        # driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
+        # driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
+        # driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
+        # driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
+        # driver.find_element(By.XPATH, "//nav/a[@href='/add_car']").click()
+        # # Generate a random Car maker
+        # make_input = "Auto Make Tesla" + ''.join(random.choices(string.digits, k=3))
+        # driver.find_element(By.XPATH, "//input[@id='make']").send_keys(make_input)
+        # # Generate a random Car model
+        # model_input = "Auto Model Y" + ''.join(random.choices(string.digits, k=3))
+        # driver.find_element(By.XPATH, "//input[@id='model']").send_keys(model_input)
+        # # Generate a random Car Year to be selected in the 'Year' combobox
+        # years_combobox_elements = driver.find_elements(By.XPATH, "//select/option")
+        # random_index = random.randint(1, 18)
+        # for year in years_combobox_elements:
+        #     if years_combobox_elements.index(year) == random_index:
+        #         year.click()
+        #         break
+        # # Generate a random Director
+        # director_input = "Auto Director " + ''.join(random.choices(string.digits, k=3))
+        # driver.find_element(By.XPATH, "//input[@id='director']").send_keys(director_input)
+        # # Generate random Main Settings
+        # main_settings_input = "Auto Main Settings " + ''.join(random.choices(string.digits, k=3))
+        # driver.find_element(By.ID, "main_settings").send_keys(main_settings_input)
+        # # Generate a random Description
+        # description_input = "Auto Description " + ''.join(random.choices(string.digits, k=3))
+        # driver.find_element(By.XPATH, "//div/textarea[@name='description']").send_keys(description_input)
+        # # Selecting an image from PC
+        # file_picture_input = driver.find_element(By.XPATH, "//input[@id='image_file']")
+        # file_picture_input.send_keys(os.path.abspath("../test_images/AutoTestCar.jpg"))
+        # driver.find_element(By.XPATH, "//input[@id='submit']").click()
+        # add_car_success_message = driver.find_element(By.XPATH, "//div/div[@class='alert alert-success']").text
+        # # Validate that new car is added to CarSphere catalog when logged-in with 'admin user
+        # logger.info("Validate that new car is added to CarSphere catalog when logged-in with 'admin user")
+        # assert (add_car_success_message ==
+        #         f"Car {make_input} {model_input} added successfully!"), ("Failed to add"
+        #                                                                  " new Car to Catalog\nScenario_14 Failed")
+        # logger.info("New Car successfully added to CarSphere Catalog")
+        # logger.info("Scenario_14 Passed")
+
+        """POM part 5 finished"""
+
         driver.close()
-        print("Scenario_14 Finished")
+
 
     """Scenario_15"""
     @pytest.mark.functionalAdminTools
@@ -420,23 +534,40 @@ class TestAdminActions:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_15 Begin")
-        driver. get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        cars_element_list = driver.find_elements(By.XPATH, "//div/div[@class='car-item']/form/button")
-        cars_element_list[-1].click()
-        delete_success_message = driver.find_element(By.CSS_SELECTOR, ".alert.alert-success")
-        # Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user
-        logger.info("Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user")
-        assert delete_success_message.text == "Car deleted successfully!", \
-            "Car do not deleted. Expected - car shall be deleted\nScenario 15 Failed"
-        logger.info("Car successfully deleted from CarSphere catalog")
+
+        """POM part 6 start"""
+
+        # Use POM pages
+        loging_page = LoginPage(driver)
+        dashboard_page = DashboardPage(driver)
+
+        logger.info("Logging in as 'admin' user")
+        loging_page.navigate_to()
+        loging_page.login("admin", "admin")
+
+        # Trying to delete the last car added to Catalog
+        logger.info("Trying to delete the last car added to Catalog")
+        delete_success_message = dashboard_page.delete_last_car()
+        logger.info(f"delete_car_success_message: {delete_success_message}")
+        print("delete_car_success_message: ", delete_success_message)
+        assert dashboard_page.delete_last_car(), "Failed to delete the last added car"
         logger.info("Scenario_15 Passed")
 
+        # driver. get("https://carsphere.onrender.com/")
+        # logger.info("Redirecting to application 'Home Page'")
+        # driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
+        # driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
+        # driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
+        # driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
+        # cars_element_list = driver.find_elements(By.XPATH, "//div/div[@class='car-item']/form/button")
+        # cars_element_list[-1].click()
+        # delete_success_message = driver.find_element(By.CSS_SELECTOR, ".alert.alert-success")
+        # # Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user
+        # logger.info("Validate that existing car is deleted from CarSphere catalog when logged-in with 'admin' user")
+        # assert delete_success_message.text == "Car deleted successfully!", \
+        #     "Car do not deleted. Expected - car shall be deleted\nScenario 15 Failed"
+        # logger.info("Car successfully deleted from CarSphere catalog")
+
+        """POM part 6 finished"""
         driver.close()
-        print("Scenario_15 Finished")
 
