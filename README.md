@@ -46,7 +46,7 @@ Automation/
 └── users.txt              # File containing user data for testing
 ```
 
-### Setup Instructions
+### Setup Instructions 
 
 #### Prerequisites
 - Make sure you have Python 3.12.6 installed on your system.
