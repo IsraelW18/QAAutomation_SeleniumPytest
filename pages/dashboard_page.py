@@ -45,7 +45,7 @@ class DashboardPage(BasePage):
 
     def delete_last_car(self):
         delete_buttons = self.find_elements(*self.DELETE_CAR_BUTTONS)
-        if delete_buttons:
+        if len(delete_buttons) > 6:
             try:
                 delete_buttons[-1].click()
                 return self.get_success_message() == "Car deleted successfully!"

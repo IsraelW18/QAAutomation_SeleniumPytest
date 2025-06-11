@@ -159,12 +159,12 @@ class TestSignUpUser:
         """TODO: changing the following to read input data from an external file,
         and populating the values using a loop"""
 
-        # Generating a new random 'username' and checking that it do not already included in the DB
+        # Generating a new random 'username' and checking that it not already included in the DB
         # First: getting a list of all existing usernames from DB
         response = requests.get("https://carsphere.onrender.com/get-users")
         existing_users = response.text
-        logger.debug(f"getting all existing users from DB:\n{existing_users}")
-        # Second: Generating a new random username and checking that it is not exist already in DB
+        logger.debug(f"existing users in DB:\n{existing_users}")
+        # Second: Generating a new random username and checking that it not exists already in DB
         random_username = existing_users[0]
         while random_username in existing_users:
             random_username = "Auto_username" + ''.join(random.choices(string.digits, k=3))
