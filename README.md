@@ -1,6 +1,9 @@
 # QA Automation Portfolio Project
 **Developer:** Israel Wasserman [LinkedIn](https://www.linkedin.com/in/israel-wasserman/)
 
+## 🚧 Coming Soon!
+I am currently working on a major rewrite of this repository to be use a **Page Object Model** design pattern for improved maintainability and structure.
+
 ### Overview
 This repository serves as a portfolio project showcasing my skills in QA automation and Python development. It demonstrates the development and execution of automated tests using Python, Selenium, and Pytest. The project includes comprehensive UI tests, API tests, as well as validations for both server-side and client-side functionality. These tests are designed to run on a custom web application I developed, [Car Sphere (Live)](https://carsphere.onrender.com/), using Python and Flask, leveraging SQLite and SQLAlchemy for database management.
 
