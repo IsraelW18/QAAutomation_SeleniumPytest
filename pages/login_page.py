@@ -12,9 +12,10 @@ class LoginPage(BasePage):
         super().__init__(driver)
         self.url = "https://carsphere.onrender.com/login"
 
-    def navigate_to(self):
 
+    def navigate_to(self):
         self.driver.get(self.url)
+
 
     def login(self, username, password):
         self.find_element(*self.USERNAME_INPUT).send_keys(username)

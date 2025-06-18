@@ -101,7 +101,7 @@ class TestAdminActionsPermissions:
         dashboard_page = DashboardPage(driver)
 
         logger.info("Logging in as admin")
-        login_page.navigate_to()
+        login_page.navigate_to_home_page()
         login_page.login("admin", "admin")
 
         logger.info("Validate that 'Add New Car' button displayed for 'admin' user")

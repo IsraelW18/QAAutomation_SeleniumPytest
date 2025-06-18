@@ -57,6 +57,10 @@ from selenium.webdriver.common.by import By
 import pytest
 import requests
 import json
+from pages.dashboard_page import DashboardPage
+from pages.login_page import LoginPage
+from pages.register_page import RegisterPage
+
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
 class TestSignUpUser:
@@ -147,53 +151,47 @@ class TestSignUpUser:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_1 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        # Redirection to 'SignUp' page
-        nav_links = driver.find_elements(By.XPATH, "//nav/a")
-        for link in nav_links:
-            if "register" in link.get_attribute("href"):
-                link.click()
-        logger.info("redirect to 'register page'")
-        """TODO: changing the following to read input data from an external file,
-        and populating the values using a loop"""
 
-        # Generating a new random 'username' and checking that it not already included in the DB
-        # First: getting a list of all existing usernames from DB
-        response = requests.get("https://carsphere.onrender.com/get-users")
-        existing_users = response.text
-        logger.debug(f"existing users in DB:\n{existing_users}")
-        # Second: Generating a new random username and checking that it not exists already in DB
-        random_username = existing_users[0]
-        while random_username in existing_users:
-            random_username = "Auto_username" + ''.join(random.choices(string.digits, k=3))
-        password = "1234"
+        # Use POM pages
+        register_page = RegisterPage(driver)
+        dhasboad = DashboardPage(driver)
+
+        # Navigate to home page
+        register_page.navigate_to_login_page()
+        logger.info("Redirected to application 'Home Page'")
+
+        # Redirection to 'SignUp' page
+        register_page.navigate_to_register_page()
+        logger.info("redirect to 'register' page'")
+
+        # Generate new random username and password
+        random_username = register_page.generate_new_random_username()
+        random_password = register_page.generate_new_random_password()
+        logger.info(f"new random username created: username: {random_username}, password: {random_password}")
+
         # Writing the new random username to logger, and also the const password
-        logger.info(f"new random username created: username: {random_username}, password: {password}")
+        logger.info(f"new random username created: username: {random_username}, password: {random_password}")
+     
         # Copying the new random 'username' and 'password' into a local 'users.txt' file
         try:
             with open("../users.txt", "a") as users_file:
-                users_file.write(f"\nusername: {random_username}, password: {password}")
+                users_file.write(f"\nusername: {random_username}, password: {random_password}")
         except Exception as e:
             logger.error(e, "\nAdding the new random username credentials to 'users.txt' file failed")
 
         # Continue populating the SignUp form and signing-up a new user
-        driver.find_element(By.ID, "firstname").send_keys("QAAuto_FirstName")
-        driver.find_element(By.ID, "lastname").send_keys("QAAuto_LastName")
-        driver.find_element(By.ID, "username").send_keys(random_username)
-        driver.find_element(By.ID, "password").send_keys(password)
-        driver.find_element(By.ID, "confirm_password").send_keys(password)
-        driver.find_element(By.XPATH, "//button[text()='Sign Up']").click()
-        alert_success = driver.find_element(By.CSS_SELECTOR, ".alert.alert-success").text
-        # Validate that new user successfully signed-up
-        logger.info("Validate that new user successfully signed-up")
-        assert ("Welcome, QAAuto_FirstName QAAuto_LastName and thanks fo"
-                "r registration!") in alert_success, logger("Failed to SignUp a new user")
+        register_page.fill_and_submitted_registration_form(first_name="firstname",
+                                             last_name="lastname",
+                                              username=random_username,
+                                              password=random_password,
+                                              confirm_password=random_password)
+        success_message = dhasboad.get_success_message()
+        assert success_message == "Welcome, QAAuto_FirstName QAAuto_LastName and thanks for registration!", \
+            "Failed to SignUp a new user"
         logger.info("Scenario_1 Passed")
 
         driver.close()
-        print("Scenario_1 Finished")
+
 
     """Scenario_2."""
     @pytest.mark.regression
@@ -248,43 +246,40 @@ class TestSignUpUser:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_2 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        nav_links = driver.find_elements(By.XPATH, "//nav/a")
-        # Redirection to 'SignUp' page
-        for link in nav_links:
-            if "register" in link.get_attribute("href"):
-                link.click()
+        
+        # Use POM page
+        register_page = RegisterPage(driver)
+
         logger.info("redirect to 'register page'")
+        register_page.navigate_to_register_page()
+
         # selecting any existing 'username' from DB
         existing_usernames = json.loads(requests.get("https://carsphere.onrender.com/get-users").text)
         # print(existing_usernames)
         username = ''
-        logger.info(type(existing_usernames))
+        logger.debug(type(existing_usernames))
         for name in existing_usernames:
             if name != 'admin':
                 username = name
                 break
-        logger.info(username)
+        logger.info(f"username: {username}")
         password = "1235"
+        logger.info(f"username: {username}\npassword: {password}")
         # Continue populating the Signup form and trying to signing-up an existing username
-        driver.find_element(By.ID, "firstname").send_keys("QAAuto_FirstName")
-        driver.find_element(By.ID, "lastname").send_keys("QAAuto_LastName")
-        driver.find_element(By.ID, "username").send_keys(username)
-        driver.find_element(By.ID, "password").send_keys(password)
-        driver.find_element(By.ID, "confirm_password").send_keys(password)
-        driver.find_element(By.XPATH, "//button[text()='Sign Up']").click()
-        alert_danger = driver.find_element(By.CSS_SELECTOR, ".alert.alert-danger").text
-        # Validate that signing-up of an existing user successfully rejected
-        logger.info("Validate that signing-up of an existing user successfully rejected")
+        register_page.fill_registration_form(first_name="QAAuto_FirstName",
+                                             last_name="QAAuto_LastName",
+                                             username=username,
+                                             password=password,
+                                             confirm_password=password)
+        # register_page.click_signup_button()
+        alert_danger = register_page.get_alert_danger_message()
+        logger.info(f"alert_danger: {alert_danger}")
         assert (f"Username '{username}' already exist, "
-                f"please try another username.") in alert_danger, ("SignUp an new user shall not be "
-                                                                    "allowed. Expected to 'blocking this behavior'")
+                f"please try another username.") in alert_danger, \
+                "Signing-up an existing user shall not be allowed"
         logger.info("Scenario_2 Passed")
 
         driver.close()
-        print("Scenario_2 Finished")
 
 
     """Scenario_3."""
@@ -339,53 +334,50 @@ class TestSignUpUser:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_3 Begin")
-        driver.get("https://carsphere.onrender.com")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/register']").click()
+
+        # Use POM page
+        register_page = RegisterPage(driver)
+
+        # Navigate to home page
+        register_page.navigate_to_register_page()
+        logger.info("Redirected to 'registration' page")
+        
         # Generating a new random 'username' and checking that it do not already included in the DB
         # First: getting a list of all existing usernames from DB
         response = requests.get("https://carsphere.onrender.com/get-users")
         existing_users = response.text
-        logger.debug(f"getting all existing users from DB:\n{existing_users}")
+        logger.debug(f"All existing users in DB:\n{existing_users}")
         # Second: Generating a new random username and checking that it is not exist already in DB
         random_username = existing_users[0]
         while random_username in existing_users:
             random_username = "Auto_username" + ''.join(random.choices(string.digits, k=3))
         # Preparing not matches passwords for 'Password' and 'Confirm password' fields
-        for_password_input = "1234"
-        for_confirm_password_input = "8888"
-        # Writing the new random username to logger, and also the const password
-        logger.info(f"new random username created: username:"
-                    f" {random_username}, password: {for_password_input}, confirm_password: {for_confirm_password_input}")
+        password_input = "1234"
+        confirm_password_input = "8888"
+        # Writing the new random username,password,confirm_password to the log.
+        logger.info(f"New random username: username:"
+                    f" {random_username}, password: {password_input}, confirm_password: {confirm_password_input}")
         # Copying the new random 'username' and 'password' into a local 'users.txt' file
         try:
             with open("../users.txt", "a") as users_file:
                 users_file.write(f"\nusername: {random_username}, "
-                                 f"password: {for_password_input}, confirm_password: {for_confirm_password_input}")
+                                 f"password: {password_input}, confirm_password: {confirm_password_input}")
         except Exception as e:
             logger.error(e, "\nAdding the new random username credentials to 'users.txt' file failed")
         # Continue populating the SignUp form and signing-up a new user
-        driver.find_element(By.ID, "firstname").send_keys("QAAuto_FirstName")
-        driver.find_element(By.ID, "lastname").send_keys("QAAuto_LastName")
-        driver.find_element(By.ID, "username").send_keys(random_username)
-        driver.find_element(By.ID, "password").send_keys(for_password_input)
-        driver.find_element(By.ID, "confirm_password").send_keys(for_confirm_password_input)
-        driver.find_element(By.XPATH, "//button[text()='Sign Up']").click()
-        confirm_password_alert = driver.find_element(By.ID, "confirm_pass")
-        confirm_password_alert_expected_color = "rgba(255, 0, 0, 1)"
-        # Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical
-        logger.info("Validate that registration rejected when 'Password' and 'Confirm Password' values are not identical")
-        try:
-            assert (confirm_password_alert.text == "Passwords are not match"
-                    and confirm_password_alert.value_of_css_property("color") == confirm_password_alert_expected_color)
-            logger.info("Scenario_3 Passed")
-        except AssertionError as e:
-            logger.info("Scenario_3 Failed")
-            raise AssertionError(e)
+        register_page.fill_registration_form(first_name="QAAuto_FirstName",
+                                             last_name="QAAuto_LastName",
+                                             username=random_username,
+                                             password=password_input,
+                                             confirm_password=confirm_password_input)
+        mismatch_password_alert, mismatch_password_alert_expected_color = register_page.get_alert_mismatch_password_message()
+        assert mismatch_password_alert == "Passwords are not match", \
+            "Failed to display the mismatch password alert"
+        assert mismatch_password_alert_expected_color == "rgba(255, 0, 0, 1)", \
+            "Failed to display the mismatch password alert in red color"
+        logger.info("Scenario_3 Passed")
 
         driver.close()
-        print("Scenario_3 Finished")
 
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
@@ -479,26 +471,22 @@ class TestLoginUser:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_4 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        actual_login_success_message = driver.find_element(By.XPATH, "//div/div[@class='alert alert-success']").text
+
+        # Use POM page
+        login_page = LoginPage(driver)
+
+        # Navigate to login page
+        logger.info("Redirect to 'login' page")
+        login_page.navigate_to_login_page()
+        login_page.login('admin', 'admin')
+
+        login_success_message = login_page.get_success_alert_message()
         expected_login_success_message = "Welcome, Administrator Manager!"
-        # Validate 'admin' user success with valid credentials
-        logger.info("Validate 'admin' user success with valid credentials")
-        assert actual_login_success_message == expected_login_success_message, \
-            f"Scenario_4 Failed.\nExpected message '{expected_login_success_message}' \
-            got '{actual_login_success_message}'"
+        assert login_success_message == expected_login_success_message, "Faild to login as 'asdmin' user"
         logger.info("Scenario_4 Passed")
-
         driver.close()
-        print("Scenario_4 Finished")
 
-
+# TODO: **I'm holding here**
     """Scenario_5"""
     @pytest.mark.system
     @pytest.mark.functional
