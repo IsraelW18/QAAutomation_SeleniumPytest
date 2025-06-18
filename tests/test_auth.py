@@ -478,6 +478,7 @@ class TestLoginUser:
         # Navigate to login page
         logger.info("Redirect to 'login' page")
         login_page.navigate_to_login_page()
+        # Trying to Login as 'admin' user with valid password
         login_page.login('admin', 'admin')
 
         login_success_message = login_page.get_success_alert_message()
@@ -527,24 +528,21 @@ class TestLoginUser:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_5 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("1234")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        actual_login_unsuccessful_message = driver.find_element(By.XPATH, "//div/div[@class='alert alert-danger']").text
-        expected_login_success_message = "Login Unsuccessful. Please check username and password"
-        # Validate that login rejected for 'admin' user with invalid credentials
-        logger.info("Validate that login rejected for 'admin' user with invalid credentials")
-        assert actual_login_unsuccessful_message == expected_login_success_message, \
-            f"Scenario_5 Failed.\nExpected message '{expected_login_success_message}' \
-            got '{actual_login_unsuccessful_message}'"
+
+        # Use POM page
+        login_page = LoginPage(driver)
+
+        # Navigate to login page
+        logger.info("Redirect to 'login' page")
+        login_page.navigate_to_login_page()
+        login_page.login('admin', '1234')
+        login_unsuccessful_message = login_page.get_unsuccessful_alert_message()
+        expected_login_unsuccessful_message = "Login Unsuccessful. Please check username and password"
+        assert login_unsuccessful_message == expected_login_unsuccessful_message, \
+            "Login as 'admin' with invalid password should not be allowed"
         logger.info("Scenario_5 Passed")
 
         driver.close()
-        print("Scenario_5 Finished")
 
 
     """Scenario_6"""
@@ -588,25 +586,20 @@ class TestLoginUser:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_6 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user3")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        actual_login_success_message = driver.find_element(By.XPATH, "//div/div[@class='alert alert-success']").text
+
+        # Use POM page
+        login_page = LoginPage(driver)
+        login_page.navigate_to_login_page()
+        # Loging-in as 'non-admin' user with valid credenatials
+        login_page.login('user3', 'user3')
+        login_success_message = login_page.get_success_alert_message()
         expected_login_success_message = "Welcome, user3 user3!"
-        # Validate login success for 'non admin' user with valid credentials
         logger.info("Validate login success for 'non admin' user with valid credentials")
-        assert actual_login_success_message == expected_login_success_message, \
-            f"Scenario_6 Failed.\nExpected message '{expected_login_success_message}' \
-            got '{actual_login_success_message}'"
+        assert login_success_message == expected_login_success_message, \
+            "Login as 'non-admin' user with valid credentials should be allowed."
         logger.info("Scenario_6 Passed")
 
         driver.close()
-        print("Scenario_6 Finished")
-
 
     """Scenario_7"""
     @pytest.mark.system
@@ -648,24 +641,18 @@ class TestLoginUser:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_7 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        actual_login_unsuccessful_message = driver.find_element(By.XPATH, "//div/div[@class='alert alert-danger']").text
+
+        # Use POM page
+        login_page = LoginPage(driver)
+        login_page.navigate_to_login_page()
+        login_page.login('user3', 'user')
+        login_unsuccessful_message = login_page.get_unsuccessful_alert_message()
         expected_login_unsuccessful_message = "Login Unsuccessful. Please check username and password"
-        # Validate login rejected for 'non admin' user with invalid credentials
-        logger.info("Validate login rejected for 'non admin' user with invalid credentials")
-        assert actual_login_unsuccessful_message == expected_login_unsuccessful_message, \
-            f"Scenario_6 Failed.\nExpected message '{expected_login_unsuccessful_message}' \
-            got '{actual_login_unsuccessful_message}'"
+        assert login_unsuccessful_message == expected_login_unsuccessful_message, \
+            "Login as 'non-admin' user with invalid password should not be allowed"
         logger.info("Scenario_7 Passed")
 
         driver.close()
-        print("Scenario_7 Finished")
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
 class TestLogoutUsers:
@@ -743,24 +730,20 @@ class TestLogoutUsers:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_8 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("admin")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("admin")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        driver.find_element(By.XPATH, "//nav/a[@href='/logout']").click()
-        logout_success_message = driver.find_element(By.CSS_SELECTOR, ".alert.alert-success")
-        # Validate logout success for 'admin' user
-        logger.info("Validate logout success for 'admin' user")
-        assert logout_success_message.text == "You have been logged out.", "'admin' user logout failed"
-        logger.info("'admin user logout success")
+
+        # Use POM page
+        login_page = LoginPage(driver)
+        login_page.navigate_to_login_page()
+        login_page.login('admin', 'admin')
+        login_page.logout()
+        logout_success_message = login_page.get_success_alert_message()
+        expected_logout_success_message = "You have been logged out."
+        assert logout_success_message == expected_logout_success_message, \
+            "Logout as 'admin' user should be allowed."
         logger.info("'Scenario_14 Passed")
 
         driver.close()
-        print("Scenario_8 Finished")
-
+        
     """Scenario_9"""
     @pytest.mark.regression
     @pytest.mark.functional
@@ -801,20 +784,16 @@ class TestLogoutUsers:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_9 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user3")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        driver.find_element(By.XPATH, "//nav/a[@href='/logout']").click()
-        logout_success_message = driver.find_element(By.CSS_SELECTOR, ".alert.alert-success")
-        # Validate logout success for 'non admin' user
-        logger.info("Validate logout success for 'non admin' user")
-        assert logout_success_message.text == "You have been logged out.", "'non admin' user logout failed"
-        logger.info("'non admin user logout success")
-        logger.info("'Scenario_15 Passed")
+
+        # Use POM page
+        login_page = LoginPage(driver)
+        login_page.navigate_to_login_page()
+        login_page.login('user3', 'user3')
+        login_page.logout()
+        logout_success_message = login_page.get_success_alert_message()
+        expected_logout_success_message = "You have been logged out."
+        assert logout_success_message == expected_logout_success_message, \
+            "Logout as 'non-admin' user should be allowed."
+        logger.info("'Scenario_9 Passed")
 
         driver.close()
-        print("Scenario_9 Finished")
