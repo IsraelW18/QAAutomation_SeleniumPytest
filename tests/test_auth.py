@@ -190,8 +190,6 @@ class TestSignUpUser:
             "Failed to SignUp a new user"
         logger.info("Scenario_1 Passed")
 
-        driver.close()
-
 
     """Scenario_2."""
     @pytest.mark.regression
@@ -278,8 +276,6 @@ class TestSignUpUser:
                 f"please try another username.") in alert_danger, \
                 "Signing-up an existing user shall not be allowed"
         logger.info("Scenario_2 Passed")
-
-        driver.close()
 
 
     """Scenario_3."""
@@ -376,8 +372,6 @@ class TestSignUpUser:
         assert mismatch_password_alert_expected_color == "rgba(255, 0, 0, 1)", \
             "Failed to display the mismatch password alert in red color"
         logger.info("Scenario_3 Passed")
-
-        driver.close()
 
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
@@ -485,9 +479,7 @@ class TestLoginUser:
         expected_login_success_message = "Welcome, Administrator Manager!"
         assert login_success_message == expected_login_success_message, "Faild to login as 'asdmin' user"
         logger.info("Scenario_4 Passed")
-        driver.close()
 
-# TODO: **I'm holding here**
     """Scenario_5"""
     @pytest.mark.system
     @pytest.mark.functional
@@ -542,7 +534,6 @@ class TestLoginUser:
             "Login as 'admin' with invalid password should not be allowed"
         logger.info("Scenario_5 Passed")
 
-        driver.close()
 
 
     """Scenario_6"""
@@ -599,8 +590,6 @@ class TestLoginUser:
             "Login as 'non-admin' user with valid credentials should be allowed."
         logger.info("Scenario_6 Passed")
 
-        driver.close()
-
     """Scenario_7"""
     @pytest.mark.system
     @pytest.mark.functional
@@ -651,8 +640,6 @@ class TestLoginUser:
         assert login_unsuccessful_message == expected_login_unsuccessful_message, \
             "Login as 'non-admin' user with invalid password should not be allowed"
         logger.info("Scenario_7 Passed")
-
-        driver.close()
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
 class TestLogoutUsers:
@@ -742,8 +729,6 @@ class TestLogoutUsers:
             "Logout as 'admin' user should be allowed."
         logger.info("'Scenario_14 Passed")
 
-        driver.close()
-        
     """Scenario_9"""
     @pytest.mark.regression
     @pytest.mark.functional
@@ -795,5 +780,3 @@ class TestLogoutUsers:
         assert logout_success_message == expected_logout_success_message, \
             "Logout as 'non-admin' user should be allowed."
         logger.info("'Scenario_9 Passed")
-
-        driver.close()

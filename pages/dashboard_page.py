@@ -1,9 +1,11 @@
 # pages/dashboard_page.py
+from asyncio import wait
 from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
+from pages.login_page import LoginPage
 
-class DashboardPage(BasePage):
+class DashboardPage(LoginPage):
     # Locators
     ADD_NEW_CAR_BUTTON = (By.XPATH, "//nav/a[@href='/add_car']")
     DELETE_CAR_BUTTONS = (By.XPATH, "//div[@class='car-item']/form/button[@class='btn btn-danger']")
@@ -18,8 +20,18 @@ class DashboardPage(BasePage):
     DESCRIPTION_INPUT = (By.XPATH, "//div/textarea[@name='description']")
     IMAGE_INPUT = (By.XPATH, "//input[@id='image_file']")
     SUBMIT_BUTTON = (By.XPATH, "//input[@id='submit']")
+    LAST_CAR_ELEMENT_LOCATION = (By.XPATH, "//div/div/div/a")
+    REVIEW_INPUT = (By.XPATH, "//form/textarea")
+    SUBMIT_REVIEW_BUTTON = (By.XPATH, "submit")
+    USERS_REVIEW_AREA = (By.XPATH, "//ul/li")
+    AI_REVIEW_BUTTON = (By.ID, "ai-review-button")
+    AI_REVIEW_INPUT = (By.ID, "review-input")
+
     # ADD_CAR_SUCCESS_MESSAGE = (By.XPATH, "//div/div[@class='alert alert-success']")
     # DELETE_SUCCESS_ALERT = (By.CSS_SELECTOR, ".alert.alert-success")
+
+    def navigate_to_home_page(self):
+        self.driver.get("https://carsphere.onrender.com/")
 
     def is_add_new_car_visible(self):
         return self.is_element_visible(*self.ADD_NEW_CAR_BUTTON)
@@ -58,3 +70,41 @@ class DashboardPage(BasePage):
 
     def navigate_to_add_new_car_form(self):
         self.find_element(*self.ADD_NEW_CAR_BUTTON).click()
+
+    def navigate_to_linkedin_page_and_get_current_url(self, element):
+        self.find_element(*element).click()
+        my_windows = self.driver.window_handles
+        self.driver.switch_to.window(my_windows[1])
+        return self.driver.current_url
+
+    def dashboard_page_main_elements_assertions(self, element, expected_value):
+        return self.find_element(*element).text in expected_value
+    
+    def navigate_to_last_car_in_catalog(self):
+        cars_element_list =self.find_elements(*self.LAST_CAR_ELEMENT_LOCATION)
+        cars_element_list[-1].click()
+
+    def add_manual_review(self, manual_review_input):
+        self.find_element(*self.REVIEW_INPUT).send_keys(manual_review_input)
+        self.find_element(*self.SUBMIT_REVIEW_BUTTON).click()
+
+    def get_user_new_review(self):
+        users_review_list = self.find_elements(*self.USERS_REVIEW_AREA)
+        return users_review_list[-1].text
+    
+
+    def get_ai_review(self, ai_review_input, driver):
+        self.find_element(*self.AI_REVIEW_BUTTON).click()
+        ai_review = wait.until(lambda _driver: driver.find_element(By.ID, "review-input").get_attribute("value") != '')
+        return ai_review
+    
+    
+
+    def click_on_ai_review_button(self):
+        self.find_element(*self.AI_REVIEW_BUTTON).click()
+
+    def wait_for_ai_review_input(self):
+        self.wait_for_element_to_be_visible(*self.AI_REVIEW_INPUT)
+
+    def submit_ai_review(self):
+        self.find_element(*self.SUBMIT_REVIEW_BUTTON).click()

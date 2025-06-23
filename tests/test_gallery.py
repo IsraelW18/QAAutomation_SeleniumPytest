@@ -45,6 +45,7 @@ import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from pages.dashboard_page import DashboardPage
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
 class TestGUIAndRedirections:
@@ -118,27 +119,20 @@ class TestGUIAndRedirections:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_16 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home page'")
-        driver.maximize_window()
-        logger.info("maximizing window")
-        background_image_url = 'url("https://carsphere.onrender.com/static/background_image/background_showroom.jpg")'
-        background_image = driver.find_element(By.TAG_NAME, "body").value_of_css_property("background-image")
-        # Validate application background image
-        logger.info("Validate application background image")
-        try:
-            assert background_image == background_image_url, (f"wrong background img,"
-                                                              f" got {background_image}, expected {background_image_url}"
-                                                              f"\nScenario_16 Failed")
-        except AssertionError as message:
-            logger.error(message)
-            raise AssertionError(message)
-        else:
-            logger.info("Scenario_16 = passed")
 
-        driver.close()
-        print("Scenario_16 Finished")
+        # Use POM page
+        dashboard_page = DashboardPage(driver)
+
+        dashboard_page.navigate_to_home_page()
+
+        # Maximize window
+        driver.maximize_window()
+
+        assert dashboard_page.dashboard_page_main_elements_assertions(\
+            (By.TAG_NAME, "body").value_of_css_property("background-image"),\
+                "https://carsphere.onrender.com/static/background_image/background_showroom.jpg")
+        logger.info("Scenario_16 Passed")
+
 
     """Scenario_17"""
     @pytest.mark.system
@@ -178,25 +172,22 @@ class TestGUIAndRedirections:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrom web driver' setup success")
-        print("Scenario 17 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        branding_element = driver.find_element(By.CLASS_NAME, "branding-icon")
-        current_branding_icon_url = branding_element.get_attribute("src")
-        expected_branding_url = "https://carsphere.onrender.com/static/background_image/branding.png"
+
+        # Use POM page
+        dashboard_page = DashboardPage(driver)
+
+        dashboard_page.navigate_to_home_page()
+
+        # Maximize window
+        driver.maximize_window()
+
         # Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)
-        logger.info("Validate the CarSphere branding icon redirection URL (shall be redirected to Home Page)")
-        try:
-            assert current_branding_icon_url == expected_branding_url
-            logger.info("Scenario 17 Passed")
-        except AssertionError as e:
-            logger.error(f"Expected {expected_branding_url}, got {current_branding_icon_url}")
-            logger.error(f"Scenario_17 Failed")
-            raise AssertionError(e)
+        assert dashboard_page.dashboard_page_main_elements_assertions(\
+            (By.CLASS_NAME, "branding-icon").get_attribute("src"),\
+                "https://carsphere.onrender.com/static/background_image/branding.png")
+        logger.info("Scenario_17 Passed")
 
-        driver.close()
-        print("Scenario_17 Finished")
-
+        
     """Scenario_18"""
     @pytest.mark.system
     @pytest.mark.functional
@@ -237,27 +228,21 @@ class TestGUIAndRedirections:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario 18 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//p/a/img[@class='linkedin-icon']").click()
-        my_windows = driver.window_handles
-        driver.switch_to.window(my_windows[1])
-        expected_linkedin_url_content = "israel-wasserman"
-        current_linkedin_url = driver.current_url
-        # Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
-        logger.info("Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile")
-        try:
-            assert expected_linkedin_url_content in current_linkedin_url
-            logger.info("Scenario 18 Passed")
-        except AssertionError:
-            logger.error(f"Expected that the {expected_linkedin_url_content} will be part of the link, "
-                         f"got {current_linkedin_url}")
-            logger.info("Scenario_18 Failed")
-            raise
 
-        driver.close()
-        print("Scenario_18 Finished")
+        # Use POM page
+        dashboard_page = DashboardPage(driver)
+
+        dashboard_page.navigate_to_home_page()
+
+        # Maximize window
+        driver.maximize_window()
+
+        # Validate that the LinkedIn icon redirection URL redirects to 'Israel Wasserman' LinkedIn profile
+        current_linkedin_url = dashboard_page.navigate_to_linkedin_page_and_get_current_url(\
+            (By.XPATH, "//p/a/img[@class='linkedin-icon']"))
+        assert "israel-wasserman" in current_linkedin_url
+        logger.info("Scenario_18 Passed")
+
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
 class TestReviews:
@@ -305,36 +290,37 @@ class TestReviews:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrom web driver' setup success")
-        print("Scenario_19 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application Home Page")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user3")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        cars_element_list = driver.find_elements(By.XPATH, "//div/div/div/a")
-        cars_element_list[-1].click()
-        manual_review_to_be_added = "Auto Manual Review" + ''.join(random.choices(string.digits, k=3))
-        driver.find_element(By.XPATH, "//form/textarea").send_keys(manual_review_to_be_added)
-        driver.find_element(By.ID, "submit").click()
-        add_review_success_message = driver.find_element(By.CSS_SELECTOR, ".alert.alert-success")
+
+        # Use POM page
+        dashboard_page = DashboardPage(driver)
+        dashboard_page.navigate_to_home_page()
+
+        # Maximize window
+        driver.maximize_window()
+        # Loggin-in as a regular user
+        dashboard_page.navigate_to_login_page()
+        dashboard_page.login("user3", "user3")
+        # Navigate the the last car(element) in the Cars gallery 
+        dashboard_page.navigate_to_last_car_in_catalog()
+        
+        # Generate a manual user review input
+        manual_review_input = "Auto Manual Review" + ''.join(random.choices(string.digits, k=3))
+        # Add manual review and submit
+        dashboard_page.add_manual_review(manual_review_input)
+
         # Assertion_1: Validate that review successfully submitted
         logger.info("Assertion_1: Validate that review successfully submitted")
-        assert add_review_success_message.text == "Review added successfully!", \
+        assert dashboard_page.get_success_message() == "Review added successfully!", \
             "Review do not added. Expected - review shall be added\nFirst part of Scenario_19 Failed"
         logger.info("Review added successfully")
-        logger.info("First part of Scenario_19 Passed...")
 
-        # Assertion_2: Validate that review appears in the 'Users Review' area
+        # Assertion_2: Validate that review appears in the 'Users Review' list
         logger.info("Assertion_2: Validate that review appears in the 'Users Review' area")
-        users_review_list = driver.find_elements(By.XPATH, "//ul/li")
-        assert users_review_list[-1].text == f"user3: {manual_review_to_be_added}", \
-            "Review do not appears in the 'Users Review' area\nSecond part of Scenario_19 Failed"
+        assert dashboard_page.get_user_new_review() == f"user3: {manual_review_input}",\
+            "user new review do not appears in the 'Users Review' area"
         logger.info("Review appears in the 'Users Review' area")
         logger.info("Scenario_19 Passed")
 
-        driver.close()
-        print("Scenario_19 Finished")
 
     """Scenario_20"""
     @pytest.mark.integration
@@ -383,34 +369,30 @@ class TestReviews:
         logger.debug("'Logger' setup success")
         driver = chrome_driver_setup
         logger.debug("'Chrome web driver' setup success")
-        print("Scenario_20 Begin")
-        driver.get("https://carsphere.onrender.com/")
-        logger.info("Redirecting to application 'Home Page'")
-        driver.find_element(By.XPATH, "//nav/a[@href='/login']").click()
-        driver.find_element(By.XPATH, "//div/input[@id='username']").send_keys("user3")
-        driver.find_element(By.XPATH, "//div/input[@id='password']").send_keys("user3")
-        driver.find_element(By.XPATH, "//form/button[@type='submit']").click()
-        cars_element_list = driver.find_elements(By.XPATH, "//div/div/div/a")
-        cars_element_list[-1].click()
-        driver.find_element(By.ID, "ai-review-button").click()
-        wait = WebDriverWait(driver, 10)
-        wait.until(lambda _driver: driver.find_element(By.ID, "review-input").get_attribute("value") != '')
-        ai_review_input = driver.find_element(By.ID, "review-input").get_attribute("value")
-        logger.info(f"Generated AI review returned from external service: {ai_review_input}")
+
+        # Use POM page
+        dashboard_page = DashboardPage(driver)
+        dashboard_page.navigate_to_login_page()
+        # Loggin-in as a regular user
+        dashboard_page.login("user3", "user3")
+        # Navigate the the last car(element) in the Cars gallery 
+        dashboard_page.navigate_to_last_car_in_catalog()
+        # Maximize window
+        driver.maximize_window()
+        # Generate AI review by clicking on the "AI Review" button
+        generated_ai_review = dashboard_page.get_ai_review_by_clicking_ai_review_button()
+        logger.info(f"Generated AI review returned from external service: {generated_ai_review}")
         # Assertion_1: Validate that AI review (from external API) generated successfully
-        logger.info("Assertion_1: Validate that AI review (from external API) generated successfully")
-        assert ai_review_input != '', "AI review failed to be generated\nFirst part of Scenario_20 Failed"
+        logger.info("Assertion_1: Validate that AI review (from external AI API) generated successfully")
+        assert generated_ai_review != '', "AI review failed to be generated"
         logger.info("AI review successfully generated")
-        logger.info("First part of Scenario_20 passed...")
 
         # Assertion_2: Validate that AI review successfully submitted
         logger.info("Assertion_2: Validate that AI review successfully submitted")
-        driver.find_element(By.ID, "submit").click()
-        add_ai_review_success_message = driver.find_element(By.CSS_SELECTOR, ".alert.alert-success")
-        assert add_ai_review_success_message.text == "Review added successfully!", \
-            "Review do not added. Expected - review shall be added\n Second part of Scenario_20 Failed"
-        logger.info("Review added successfully")
-        logger.info("Second part of Scenario_20 Passed")
+        dashboard_page.submit_ai_review()
+        success_message = dashboard_page.get_success_message()
 
-        driver.close()
-        print("Scenario_20 Finished")
+        assert success_message == "Review added successfully!", "AI review failed to be submitted"
+        logger.info("Review added successfully")
+
+        logger.info("Scenario_20 Passed")

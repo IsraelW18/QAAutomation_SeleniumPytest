@@ -101,14 +101,12 @@ class TestAdminActionsPermissions:
         dashboard_page = DashboardPage(driver)
 
         logger.info("Logging in as admin")
-        login_page.navigate_to_home_page()
+        login_page.navigate_to_login_page()
         login_page.login("admin", "admin")
 
         logger.info("Validate that 'Add New Car' button displayed for 'admin' user")
         assert dashboard_page.is_add_new_car_visible(), "Add New Car button not found"
         logger.info("Scenario_10 Passed")
-
-        driver.close()
 
     """Scenario_9"""
     @pytest.mark.functionalAdminTools
@@ -147,7 +145,7 @@ class TestAdminActionsPermissions:
 
         # Login
         logger.info("Logging in as admin")
-        login_page.navigate_to()
+        login_page.navigate_to_login_page()
         login_page.login("admin", "admin")
 
         logger.info("Validate that 'Delete buttons' are visible for admin user")
@@ -156,8 +154,6 @@ class TestAdminActionsPermissions:
             logger.info("Scenario_11 Passed")
         except AssertionError as e:
             logger.info(f"Scenario_11 Failed.\n{e}")
-
-        driver.close()
 
 
     """Scenario_12"""
@@ -196,15 +192,13 @@ class TestAdminActionsPermissions:
         dashboard_page = DashboardPage(driver)
 
         logger.info("Logging in as Non admin user")
-        login_page.navigate_to()
+        login_page.navigate_to_home_page()
         login_page.login("user3", "user3")
 
         # Validate that 'Add New Car' button do not displayed for non admin users
         logger.info("Validate that 'Add New Car' button do not displayed for 'Non admin' users ")
         assert not dashboard_page.is_add_new_car_visible(), "'Add New Car' button is visible for Non admin users"
         logger.info("Scenario_12 Passed")
-
-        driver.close()
 
     """Scenario_13"""
     @pytest.mark.functionalAdminTools
@@ -242,15 +236,13 @@ class TestAdminActionsPermissions:
         dashboard_page = DashboardPage(driver)
 
         # Login as 'non admin' user
-        login_page.navigate_to()
+        login_page.navigate_to_home_page()
         login_page.login("user3", "user3")
 
         # Validate that 'Delete' car buttons do not display for 'Non admin' users
         logger.info("Validate that 'Delete' car buttons do not display for 'Non admin' users ")
         assert not dashboard_page.are_delete_buttons_visible(), "'Delete' car buttons appear for 'Non admin users'"
         logger.info("Scenario_13 Passed")
-
-        driver.close()
 
 
 @pytest.mark.usefixtures("chrome_driver_setup", "logger_setup")
@@ -327,7 +319,7 @@ class TestAdminActions:
         login_page = LoginPage(driver)
 
         logger.info("Logging in as 'admin' user")
-        login_page.navigate_to()
+        login_page.navigate_to_home_page()
         login_page.login("admin", "admin")
         dashboard_page.navigate_to_add_new_car_form()
 
@@ -356,8 +348,6 @@ class TestAdminActions:
         logger.info("Validate that Car successfully added")
         assert new_car_added_message_status, "New car did not added"
         logger.info("Scenario_14 Passed")
-
-        driver.close()
 
     """Scenario_15"""
     @pytest.mark.functionalAdminTools
@@ -407,6 +397,4 @@ class TestAdminActions:
         delete_car_success = dashboard_page.delete_last_car()
         assert delete_car_success, "Failed to delete the last added car"
         logger.info("Scenario_15 Passed")
-
-        driver.close()
-
+    
