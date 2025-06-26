@@ -6,6 +6,9 @@ This repository serves as a portfolio project showcasing my skills in QA automat
 
 The source code for the project is available in my [CarSphere Repository](https://github.com/IsraelW18/CarSphere.git).
 
+**Design Pattern: Page Object Model (POM)**
+This project is structured according to the Page Object Model (POM) design pattern. POM is a widely-used approach in test automation that encourages the separation of test logic from page-specific code by representing each web page as a dedicated class. This design improves code maintainability, readability, and reusability, making it easier to scale and update tests as the application evolves.
+
 The automated testing suite ensures the reliability, scalability, and robustness of the application by covering multiple layers:
 - UI Tests: Validate the functionality and behavior of the web interface.
 - API Tests: Ensure that API endpoints work as expected and return the correct responses.
@@ -27,23 +30,32 @@ The automated testing suite ensures the reliability, scalability, and robustness
 - **Git**: Version control.
 
 ### Project Structure
+
 ```bash
-Automation/
-├── .venv/                 # Virtual environment
-├── assets/                # Assets directory (currently empty)
-├── test_images/           # Test images for automation
+Automation_POM/
+├── assets/                  # Static assets (e.g., CSS files)
+│   └── style.css
+├── pages/                   # Page Object Model classes
+│   ├── base_page.py
+│   ├── dashboard_page.py
+│   ├── login_page.py
+│   ├── register_page.py
+│   └── __init__.py
+├── tests/                   # Test suites and fixtures
+│   ├── test_admin.py
+│   ├── test_auth.py
+│   ├── test_gallery.py
+│   ├── conftest.py
+│   └── __init__.py
+├── test_images/             # Images for upload and UI tests
 │   ├── AutoTestCar.jpg
 │   ├── AutoTestCar_bak.jpg
 │   └── AutoTestCar_bak_2.jpg
-├── conftest.py            # Shared fixtures and setup
-├── README.md              # Project description
-├── report.html            # Test execution report
-├── requirements.txt       # Requirements file for project dependencies installation
-├── test_admin.py          # Tests for admin-related functionality
-├── test_auth.py           # Tests for authentication functionality
-├── test_gallery.py        # Tests for gallery-related functionality
-├── test_third.log         # Log file for third test execution
-└── users.txt              # File containing user data for testing
+├── users.txt                # Test users data
+├── requirements.txt         # Python dependencies
+├── report.html              # Test execution report
+├── test_third.log           # Log file for test runs
+└── README.md                # Project documentation
 ```
 
 ### Setup Instructions
