@@ -192,7 +192,8 @@ class TestAdminActionsPermissions:
         dashboard_page = DashboardPage(driver)
 
         logger.info("Logging in as Non admin user")
-        login_page.navigate_to_home_page()
+        dashboard_page.navigate_to_home_page()
+        login_page.navigate_to_login_page()
         login_page.login("user3", "user3")
 
         # Validate that 'Add New Car' button do not displayed for non admin users
@@ -236,7 +237,8 @@ class TestAdminActionsPermissions:
         dashboard_page = DashboardPage(driver)
 
         # Login as 'non admin' user
-        login_page.navigate_to_home_page()
+        dashboard_page.navigate_to_home_page()
+        login_page.navigate_to_login_page()
         login_page.login("user3", "user3")
 
         # Validate that 'Delete' car buttons do not display for 'Non admin' users
@@ -318,9 +320,15 @@ class TestAdminActions:
         dashboard_page = DashboardPage(driver)
         login_page = LoginPage(driver)
 
+        # Navigate to home page
+        dashboard_page.navigate_to_home_page()
+
+        # Navigate to login page and logging-in as 'admin' user
         logger.info("Logging in as 'admin' user")
-        login_page.navigate_to_home_page()
+        login_page.navigate_to_login_page()
         login_page.login("admin", "admin")
+
+        # Navigate to 'Add New Car' page
         dashboard_page.navigate_to_add_new_car_form()
 
         make_input = "Auto Make Tesla" + ''.join(random.choices(string.digits, k=3))
@@ -389,7 +397,7 @@ class TestAdminActions:
         dashboard_page = DashboardPage(driver)
 
         logger.info("Logging in as 'admin' user")
-        loging_page.navigate_to()
+        loging_page.navigate_to_login_page()
         loging_page.login("admin", "admin")
 
         # Trying to delete the last car added to Catalog

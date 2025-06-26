@@ -53,6 +53,7 @@ pytest test_auth.py
 """
 import string
 import random
+import time
 from selenium.webdriver.common.by import By
 import pytest
 import requests
@@ -157,7 +158,7 @@ class TestSignUpUser:
         dhasboad = DashboardPage(driver)
 
         # Navigate to home page
-        register_page.navigate_to_login_page()
+        register_page.navigate_to_home_page()
         logger.info("Redirected to application 'Home Page'")
 
         # Redirection to 'SignUp' page
@@ -165,7 +166,8 @@ class TestSignUpUser:
         logger.info("redirect to 'register' page'")
 
         # Generate new random username and password
-        random_username = register_page.generate_new_random_username()
+        existing_users = register_page.get_users_list_from_api()
+        random_username = register_page.generate_new_random_username(existing_users)
         random_password = register_page.generate_new_random_password()
         logger.info(f"new random username created: username: {random_username}, password: {random_password}")
 
@@ -180,13 +182,13 @@ class TestSignUpUser:
             logger.error(e, "\nAdding the new random username credentials to 'users.txt' file failed")
 
         # Continue populating the SignUp form and signing-up a new user
-        register_page.fill_and_submitted_registration_form(first_name="firstname",
-                                             last_name="lastname",
+        register_page.fill_and_submit_registration_form(first_name="QAAuto_FirstName",
+                                             last_name="QAAuto_LastName",
                                               username=random_username,
                                               password=random_password,
                                               confirm_password=random_password)
         success_message = dhasboad.get_success_message()
-        assert success_message == "Welcome, QAAuto_FirstName QAAuto_LastName and thanks for registration!", \
+        assert success_message == """Welcome, QAAuto_FirstName QAAuto_LastName and thanks for registration!\n\n!!! You're already logged-in. Let's Begin !!!""", \
             "Failed to SignUp a new user"
         logger.info("Scenario_1 Passed")
 
@@ -249,6 +251,7 @@ class TestSignUpUser:
         register_page = RegisterPage(driver)
 
         logger.info("redirect to 'register page'")
+        register_page.navigate_to_home_page()
         register_page.navigate_to_register_page()
 
         # selecting any existing 'username' from DB
@@ -264,7 +267,7 @@ class TestSignUpUser:
         password = "1235"
         logger.info(f"username: {username}\npassword: {password}")
         # Continue populating the Signup form and trying to signing-up an existing username
-        register_page.fill_registration_form(first_name="QAAuto_FirstName",
+        register_page.fill_and_submit_registration_form(first_name="QAAuto_FirstName",
                                              last_name="QAAuto_LastName",
                                              username=username,
                                              password=password,
@@ -335,6 +338,7 @@ class TestSignUpUser:
         register_page = RegisterPage(driver)
 
         # Navigate to home page
+        register_page.navigate_to_home_page()
         register_page.navigate_to_register_page()
         logger.info("Redirected to 'registration' page")
         
@@ -361,7 +365,7 @@ class TestSignUpUser:
         except Exception as e:
             logger.error(e, "\nAdding the new random username credentials to 'users.txt' file failed")
         # Continue populating the SignUp form and signing-up a new user
-        register_page.fill_registration_form(first_name="QAAuto_FirstName",
+        register_page.fill_and_submit_registration_form(first_name="QAAuto_FirstName",
                                              last_name="QAAuto_LastName",
                                              username=random_username,
                                              password=password_input,
@@ -527,8 +531,15 @@ class TestLoginUser:
         # Navigate to login page
         logger.info("Redirect to 'login' page")
         login_page.navigate_to_login_page()
+
+        logger.info("Entering invalid 'admin'credentials and clicking on the submit button")
         login_page.login('admin', '1234')
+
+        logger.info("Getting the unsuccessful alert message")
         login_unsuccessful_message = login_page.get_unsuccessful_alert_message()
+        logger.info(f"unsuccessful alert message: {login_unsuccessful_message}")
+
+        logger.info("Validating the unsuccessful alert message")
         expected_login_unsuccessful_message = "Login Unsuccessful. Please check username and password"
         assert login_unsuccessful_message == expected_login_unsuccessful_message, \
             "Login as 'admin' with invalid password should not be allowed"
@@ -583,9 +594,13 @@ class TestLoginUser:
         login_page.navigate_to_login_page()
         # Loging-in as 'non-admin' user with valid credenatials
         login_page.login('user3', 'user3')
+
+        logger.info("Getting the success alert message")
         login_success_message = login_page.get_success_alert_message()
         expected_login_success_message = "Welcome, user3 user3!"
-        logger.info("Validate login success for 'non admin' user with valid credentials")
+        logger.info(f"Success alert message: {login_success_message}")
+        
+        logger.info("Validate login success for 'non-admin' user with valid credentials")
         assert login_success_message == expected_login_success_message, \
             "Login as 'non-admin' user with valid credentials should be allowed."
         logger.info("Scenario_6 Passed")
@@ -677,6 +692,7 @@ class TestLogoutUsers:
     - `@pytest.mark.regression`: Indicates that the tests are critical for validating system stability during changes.
     - `@pytest.mark.functional`: Ensures that the logout functionality works as intended.
     """
+
     """Scenario_8"""
     @pytest.mark.regression
     @pytest.mark.functional
@@ -721,13 +737,23 @@ class TestLogoutUsers:
         # Use POM page
         login_page = LoginPage(driver)
         login_page.navigate_to_login_page()
+
+        # Logging in as 'admin' user
+        logger.info("Logging in as 'admin' user")
         login_page.login('admin', 'admin')
+
+        # Logging out as 'admin' user
+        logger.info("Logging out as 'admin' user")
         login_page.logout()
+
+        # Getting the success alert message
         logout_success_message = login_page.get_success_alert_message()
+        logger.info(f"Success alert message: {logout_success_message}")
+
         expected_logout_success_message = "You have been logged out."
         assert logout_success_message == expected_logout_success_message, \
             "Logout as 'admin' user should be allowed."
-        logger.info("'Scenario_14 Passed")
+        logger.info("'Scenario_8 Passed")
 
     """Scenario_9"""
     @pytest.mark.regression
@@ -773,9 +799,20 @@ class TestLogoutUsers:
         # Use POM page
         login_page = LoginPage(driver)
         login_page.navigate_to_login_page()
+
+        # Logging in as 'non-admin' user
+        logger.info("Logging in as 'non-admin' user")
         login_page.login('user3', 'user3')
+
+        # Logging out as 'non-admin' user
+        logger.info("Logging out as 'non-admin' user")
         login_page.logout()
+
+        # Getting the success alert message
         logout_success_message = login_page.get_success_alert_message()
+        logger.info(f"Success alert message: {logout_success_message}")
+
+        # Validating the success alert message
         expected_logout_success_message = "You have been logged out."
         assert logout_success_message == expected_logout_success_message, \
             "Logout as 'non-admin' user should be allowed."

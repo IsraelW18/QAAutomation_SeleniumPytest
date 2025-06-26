@@ -8,7 +8,8 @@ class LoginPage(BasePage):
     PASSWORD_INPUT = (By.XPATH, "//div/input[@id='password']")
     LOGIN_BUTTON = (By.XPATH, "//form/button[@type='submit']")
     SUCCESS_ALERT_MESSAGE = (By.CSS_SELECTOR, ".alert.alert-success")
-    UNSUCCESSFUL_ALERT_MESSAGE = (By.CSS_SELECTOR, "alert alert-danger")
+    UNSUCCESSFUL_ALERT_MESSAGE = (By.CSS_SELECTOR, ".alert.alert-danger")
+    LOGOUT_BUTTON = (By.XPATH, "//a[contains(text(), 'Sign Out')]")
     
     def __init__(self, driver):
         super().__init__(driver)
@@ -29,3 +30,7 @@ class LoginPage(BasePage):
     
     def get_unsuccessful_alert_message(self):
         return self.find_element(*self.UNSUCCESSFUL_ALERT_MESSAGE).text
+
+    def logout(self):
+        logout_button = self.find_element(*self.LOGOUT_BUTTON)
+        logout_button.click()

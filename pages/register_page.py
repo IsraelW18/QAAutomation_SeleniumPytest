@@ -6,7 +6,7 @@ from pages.base_page import BasePage
 import requests
 from pages.login_page import LoginPage
 
-class RegisterPage(BasePage, LoginPage):
+class RegisterPage(LoginPage):
     NAV_LINKS = (By.XPATH, "//nav/a")
     FIRST_NAME = (By.XPATH, "//input[@id='firstname']")
     LAST_NAME = (By.XPATH, "//input[@id='lastname']")
@@ -15,7 +15,7 @@ class RegisterPage(BasePage, LoginPage):
     CONFIRM_PASSWORD = (By.XPATH, "//input[@id='confirm_password']")
     SUBMIT_BUTTON = (By.XPATH, "//button[text()='Sign Up']")
 
-    def navigate_to_register_page(self, driver):
+    def navigate_to_register_page(self):
         links = self.find_elements(*self.NAV_LINKS)
         for link in links:
             if "register" in link.get_attribute("href"):
@@ -37,7 +37,7 @@ class RegisterPage(BasePage, LoginPage):
         password = "1234"
         return password
 
-    def fill_registration_form(self, first_name, last_name, username, password, confirm_password):
+    def fill_and_submit_registration_form(self, first_name, last_name, username, password, confirm_password):
         self.find_element(*self.FIRST_NAME).send_keys(first_name)
         self.find_element(*self.LAST_NAME).send_keys(last_name)
         self.find_element(*self.USERNAME).send_keys(username)
@@ -48,8 +48,11 @@ class RegisterPage(BasePage, LoginPage):
     def get_alert_danger_message(self):
         return self.find_element(By.CSS_SELECTOR, ".alert.alert-danger").text
     
+    def get_alert_mismatch_password_message_color(self):
+        return self.find_element(By.ID, "confirm_pass").value_of_css_property("color")
+    
     def get_alert_mismatch_password_message(self):
         mismatch_password_alert = self.find_element(By.ID, "confirm_pass").text
-        mismatch_password_alert_expected_color = mismatch_password_alert.value_of_css_property("color")
+        mismatch_password_alert_expected_color = self.get_alert_mismatch_password_message_color()
         return mismatch_password_alert, mismatch_password_alert_expected_color
         

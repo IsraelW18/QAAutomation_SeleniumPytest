@@ -7,6 +7,9 @@ class BasePage:
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(self.driver, 10)
+    
+    def navigate_to_home_page(self):
+        self.driver.get("https://carsphere.onrender.com/")
 
     def find_element(self, by, value):
         return self.wait.until(EC.presence_of_element_located((by, value)))
@@ -20,3 +23,4 @@ class BasePage:
             return True
         except TimeoutException:
             return False
+
